@@ -2,4 +2,12 @@
 
 I am Rahul Rathore and welcome to my GitHub profile!
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=rahul-rathore-576&label=Profile%20views&color=0e75b6&style=flat" alt="rahulrathore" /> </p>
+🏆 <b>GitHub Awards</b>
+
+![Github Trophy](https://github-profile-trophy.vercel.app/?username=rahul-rathore-576)
+
+⭐ <b>GitHub Stars</b>
+
+![Rahul's GitHub stats](https://github-readme-stats.vercel.app/api?username=rahul-rathore-576&show_icons=true&theme=radical)
+
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=rahul-rathore-576)
