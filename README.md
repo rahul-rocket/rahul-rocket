@@ -4,12 +4,12 @@ I am Rahul R. and welcome to my GitHub profile!
 
 🏆 <b>GitHub Awards</b>
 
-![Github Trophy](https://github-profile-trophy.vercel.app/?username=rahul-rathore-576)
+![Github Trophy](https://github-profile-trophy.vercel.app/?username=rahul-rocket)
 
 ⭐ <b>GitHub Stars</b>
 
-![Rahul's GitHub stats](https://github-readme-stats.vercel.app/api?username=rahul-rathore-576&show_icons=true&theme=radical)
+![Rahul's GitHub stats](https://github-readme-stats.vercel.app/api?username=rahul-rocket&show_icons=true&theme=radical)
 
-![Visitors](https://visitor-badge.laobi.icu/badge?page_id=rahul-rathore-576)
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=rahul-rocket)
 
-[![GitHub Streak](https://streak-stats.demolab.com?user=rahul-rathore-576&theme=dark)](https://git.io/streak-stats)
+[![GitHub Streak](https://streak-stats.demolab.com?user=rahul-rocket&theme=dark)](https://git.io/streak-stats)
