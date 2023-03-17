@@ -11,3 +11,5 @@ I am Rahul R. and welcome to my GitHub profile!
 ![Rahul's GitHub stats](https://github-readme-stats.vercel.app/api?username=rahul-rathore-576&show_icons=true&theme=radical)
 
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=rahul-rathore-576)
+
+[![GitHub Streak](https://streak-stats.demolab.com?user=rahul-rathore-576&theme=dark)](https://git.io/streak-stats)
