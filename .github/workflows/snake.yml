@@ -16,9 +16,6 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   build:
-		# Job to generate graph with a snake eating your contributions
-		name: Jobs to generate snake
-
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
