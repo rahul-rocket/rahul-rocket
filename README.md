@@ -10,6 +10,8 @@ I am Rahul R. and welcome to my GitHub profile!
 
 ![Rahul's GitHub stats](https://github-readme-stats.vercel.app/api?username=rahul-rocket&show_icons=true&theme=radical)
 
+💪 <b>GitHub Stats</b>
+
 [![GitHub Streak](https://streak-stats.demolab.com?user=rahul-rocket&theme=dark)](https://git.io/streak-stats)
 
 ![Snake animation](https://github.com/rahul-rocket/rahul-rocket/blob/output/github-contribution-grid-snake.svg)
