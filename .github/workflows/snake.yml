@@ -2,11 +2,11 @@
 
 name: Generate Snake
 
-# Controls when the action will run. This action runs every 12 hours.
+# Controls when the action will run. This action runs Every Monday at 12AM UTC.
 
 on:
   schedule:
-    # every 12 hours
+    # Every Monday at 12AM UTC
     - cron: "0 12 * * 1"
 
   # This command allows us to run the Action automatically from the Actions tab.
