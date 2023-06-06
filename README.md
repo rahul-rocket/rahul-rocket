@@ -14,6 +14,6 @@ Welcome to my GitHub profile! I'm a passionate Web Artisan and Full Stack Develo
 
 [![GitHub Streak](https://streak-stats.demolab.com?user=rahul-rocket&theme=dark)](https://git.io/streak-stats)
 
-![Snake animation](https://github.com/rahul-rocket/rahul-rocket/blob/output/github-contribution-grid-snake.svg)
+![snake gif](https://github.com/rahul-rocket/rahul-rocket/blob/output/github-contribution-grid-snake.gif)
 
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=rahul-rocket)
