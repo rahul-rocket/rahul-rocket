@@ -1,10 +1,23 @@
-<h1 align="center">Hello, I'm Rahul Rocket! 👋</h1>
+# Hi there! 👋 I'm Rahul Rocket!
 
-Welcome to my GitHub profile! I'm a passionate software engineer with a strong interest in Web Development and Open-Source projects, specializing in Angular, Node.js, NestJs and Laravel. I love building robust and dynamic web applications that deliver exceptional user experiences.
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=rahul-rocket)
 
-🏆 <b>GitHub Awards</b>
+### About Me
 
-![Github Trophy](https://github-profile-trophy.vercel.app/?username=rahul-rocket)
+Welcome to my GitHub profile! I'm a passionate software engineer with a strong interest in **Web Development** and **Open-Source** projects, specializing in **Angular**, **NodeJs**, **NestJs** and **Laravel**. I love coding and building robust and dynamic web applications that deliver exceptional user experiences.
+
+## 🚀 Skills
+
+- Programming Languages: **JavaScript**, **PHP**, **TypeScript**
+- Front-end Development: **Angular**, **React**, **HTML**, **CSS**
+- Back-end Development: **NodeJs**, **NestJS**, **ExpressJS**
+- Database Technologies: **MySQL**, **PostgreSQL**, **MongoDB**, **SQLite**
+- Version Control: **Git**, **GitHub**, **GitLab**
+
+## 🏆 GitHub Awards
+
+![Github Awards](https://github-profile-trophy.vercel.app/?username=rahul-rocket)
+
 
 ⭐ <b>GitHub Stars</b>
 
@@ -15,5 +28,3 @@ Welcome to my GitHub profile! I'm a passionate software engineer with a strong i
 [![GitHub Streak](https://streak-stats.demolab.com?user=rahul-rocket&theme=dark)](https://git.io/streak-stats)
 
 ![snake gif](https://github.com/rahul-rocket/rahul-rocket/blob/output/github-contribution-grid-snake.gif)
-
-![Visitors](https://visitor-badge.laobi.icu/badge?page_id=rahul-rocket)
