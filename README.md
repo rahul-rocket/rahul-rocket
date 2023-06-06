@@ -1,6 +1,6 @@
-<h1 align="center">Hello < Developers/ >! 👋</h1>
+<h1 align="center">Hello, I'm Rahul Rocket! 👋</h1>
 
-I am Rahul R. and welcome to my GitHub profile!
+Welcome to my GitHub profile! I'm a passionate Web Artisan and Full Stack Developer, specializing in Angular, Node.js, NestJs and Laravel. I love building robust and dynamic web applications that deliver exceptional user experiences.
 
 🏆 <b>GitHub Awards</b>
 
