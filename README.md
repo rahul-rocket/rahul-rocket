@@ -14,6 +14,8 @@ Welcome to my GitHub profile! I'm a passionate software engineer with a strong i
 
 ## 🤝 Contributions
 
+I actively contribute to open-source projects and enjoy collaborating with other developers. Here are a few noteworthy contributions:
+
 - [Ever Gauzy](https://github.com/ever-co/ever-gauzy) - I am leading the project.
 - [Ever Gauzy Team](https://github.com/ever-co/ever-gauzy-teams) - Backend developer.
 
