@@ -1,6 +1,6 @@
 <h1 align="center">Hello, I'm Rahul Rocket! 👋</h1>
 
-Welcome to my GitHub profile! I'm a passionate Web Artisan and Full Stack Developer, specializing in Angular, Node.js, NestJs and Laravel. I love building robust and dynamic web applications that deliver exceptional user experiences.
+Welcome to my GitHub profile! I'm a passionate software engineer with a strong interest in Web Development and Open-Source projects, specializing in Angular, Node.js, NestJs and Laravel. I love building robust and dynamic web applications that deliver exceptional user experiences.
 
 🏆 <b>GitHub Awards</b>
 
