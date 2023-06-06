@@ -1,6 +1,6 @@
 # GitHub Action for generating a contribution graph with a snake eating your contributions.
 
-name: Generate Snake
+name: Snake Game
 
 # Controls when the action will run. This action runs Every Monday at 12AM UTC.
 
@@ -22,10 +22,12 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks repo under $GITHUB_WORKSHOP, so your job can access it
-      - uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
       # Generates the Snake Animation
-      - uses: Platane/snk@master
+      - name: Set up Platane/snk
+        uses: Platane/snk@master
         id: snake-gif
         with:
           github_user_name: rahul-rocket
