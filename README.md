@@ -10,7 +10,7 @@ Welcome to my GitHub profile! I'm a passionate software engineer with a strong i
 - 🌐 Front-end Development: **Angular**, **React**, **HTML**, **CSS**
 - 🔙 Back-end Development: **NodeJs**, **NestJS**, **ExpressJS**
 - 🗃️ Database Technologies: **MySQL**, **PostgreSQL**, **MongoDB**, **SQLite**
-- 📚 Version Control: **Git**, **GitHub**, **GitLab**
+- 📚 Version Control: **Git**, **GitHub**, **GitLab**, **BitBucket**
 
 ## 🤝 Open Source Contributions
 
