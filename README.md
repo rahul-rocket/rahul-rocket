@@ -4,7 +4,7 @@
 
 Welcome to my GitHub profile! I'm a passionate software engineer with a strong interest in **Web Development** and **Open-Source** projects, specializing in **Angular**, **NodeJs**, **NestJs** and **Laravel**. I love coding and building robust and dynamic web applications that deliver exceptional user experiences.
 
-## 🚀 Skills
+## 💼 Skills & Stacks 🚀
 
 - 💻 Programming Languages: **TypeScript**, **JavaScript**, **PHP**
 - 🌐 Front-end Development: **Angular**, **Angular Material**, **HTML**, **CSS**, **Bootstrap**, **React**
