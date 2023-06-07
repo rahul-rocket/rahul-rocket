@@ -6,11 +6,12 @@ Welcome to my GitHub profile! I'm a passionate software engineer with a strong i
 
 ## 🚀 Skills
 
-- 💻 Programming Languages: **JavaScript**, **PHP**, **TypeScript**
-- 🌐 Front-end Development: **Angular**, **React**, **HTML**, **CSS**
-- 🔙 Back-end Development: **NodeJs**, **NestJS**, **ExpressJS**
+- 💻 Programming Languages: **TypeScript**, **JavaScript**, **PHP**
+- 🌐 Front-end Development: **Angular**, **Angular Material**, **HTML**, **CSS**, **Bootstrap**, **React**
+- 🔙 Back-end Development: **NodeJs**, **NestJS**, **ExpressJS**, **RxJS**, **Laravel**, **Lumen**, **CodeIgnitor**
 - 🗃️ Database Technologies: **MySQL**, **PostgreSQL**, **MongoDB**, **SQLite**
 - 📚 Version Control: **Git**, **GitHub**, **GitLab**, **BitBucket**
+- 🔄 Integration: **Third-Party API Integration**, **Payment Gateways Integration**.
 
 ## 🤝 Open Source Contributions
 
