@@ -18,7 +18,7 @@ Welcome to my GitHub profile! I'm a passionate software engineer with a strong i
 
 I actively contribute to open-source projects and enjoy collaborating with other developers. Here are a few noteworthy contributions:
 
-- [Ever Gauzy](https://github.com/ever-co/ever-gauzy) - I am leading the project.
+- [Ever Gauzy](https://github.com/ever-co/ever-gauzy) - Core Developer.
 - [Ever Gauzy Team](https://github.com/ever-co/ever-gauzy-teams) - Backend API developer.
 - [Ngx Datepicker Material](https://github.com/fetrarij/ngx-daterangepicker-material) - Fixed small UI (Empty Ranges).
 
