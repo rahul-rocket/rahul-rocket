@@ -23,13 +23,15 @@ jobs:
       - name: Generate Snake Animation
         uses: Platane/snk@v3
         with:
-           # GitHub username to generate the animation for
-          github_user_name: ${{ github.repository_owner }}  # 🔹 Set your GitHub username explicitly
+          # 🔹 GitHub username to generate the animation for
+          github_user_name: "rahul-rocket"
           # Define the output files and their configurations
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-dark.svg?palette=github-dark
             dist/github-contribution-grid-snake.gif
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # Step 3: Upload the generated SVG/GIF as artifacts
       - name: Upload Snake Graph Artifacts
