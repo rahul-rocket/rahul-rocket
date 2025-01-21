@@ -34,7 +34,11 @@ I actively contribute to open-source projects and enjoy collaborating with other
 
 ### 🐍 Contribution Snake Graph
 
-![GitHub Contribution Snake](https://github.com/rahul-rocket/rahul-rocket/blob/output/github-contribution-grid-snake-dark.svg)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/rahul-rocket/rahul-rocket/blob/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/rahul-rocket/rahul-rocket/blob/output/github-contribution-grid-snake.svg">
+  <img alt="GitHub Contribution Snake" src="https://github.com/rahul-rocket/rahul-rocket/blob/output/github-contribution-grid-snake.svg">
+</picture>
 
 ## 📫 Get in Touch
 
