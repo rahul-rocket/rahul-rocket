@@ -32,9 +32,9 @@ I actively contribute to open-source projects and enjoy collaborating with other
 
 ![Rahul's GitHub stats](https://github-readme-stats.vercel.app/api?username=rahul-rocket&show_icons=true&theme=radical)
 
-## 🐍 Snake Animation 
+### 🐍 Contribution Snake Graph
 
-![Snake Animation](https://github.com/rahul-rocket/rahul-rocket/blob/output/github-contribution-grid-snake.svg)
+![GitHub Contribution Snake](https://github.com/rahul-rocket/rahul-rocket/raw/output/github-contribution-grid-snake.svg)
 
 ## 📫 Get in Touch
 
