@@ -1,13 +1,9 @@
-# GitHub Action to generate a contribution graph with a snake animation.
-
 name: Snake Game
 
-# Controls when the action will run. It runs every Monday at 12AM UTC.
 on:
   schedule:
-    - cron: "0 0 * * *"  # Runs every day at 12AM UTC
+    - cron: "0 0 * * *"  # Runs every day at midnight UTC
 
-  # Allows running the workflow manually from the Actions tab
   workflow_dispatch:
 
 jobs:
@@ -24,7 +20,7 @@ jobs:
       - name: Generate Snake Animation
         uses: Platane/snk@v3
         with:
-          github_user_name: ${{ github.repository_owner }}  # Your GitHub username
+          github_user_name: "rahul-rocket"  # 🔹 Set your GitHub username explicitly
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake.gif
