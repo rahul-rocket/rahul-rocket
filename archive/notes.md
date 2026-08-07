@@ -53,6 +53,20 @@ working. Changes:
 Nothing about the `output` branch or its contents was touched, so the currently
 published SVGs remain live until the next scheduled run overwrites them.
 
+### Follow-up: hero banner rewording (same day)
+
+The banner SVGs added in the redesign originally carried the GitHub profile bio
+— *Web Artisan · Open-Source Enthusiast / Full Stack Developer · Problem Solver*
+— and were rewritten hours later to carry the requested positioning: *Senior
+Full Stack Engineer · AI Engineer / SaaS Builder · Cloud Architect*. No snapshot
+directory was created for this: both versions are assets authored in this
+repository on the same day, and the earlier wording is one `git show` away.
+
+```bash
+git log --oneline -- assets/banner/
+git show <commit>:assets/banner/profile-banner-dark.svg
+```
+
 ### Other branches
 
 `master`, `gh-pages`, and `output` all still exist on the remote and were not
