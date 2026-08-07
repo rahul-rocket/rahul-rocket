@@ -1,0 +1,56 @@
+name: Latest Gists
+
+# Rewrites the list between the <!--START_SECTION:gists--> and
+# <!--END_SECTION:gists--> markers in README.md with the most recently updated
+# public gists on this account. If those markers are removed from the README
+# the job fails, so keep them in place.
+#
+# There is no pinned third-party action for this, so the step below is a short
+# script against the public gists API using the built-in GITHUB_TOKEN. That
+# keeps the job off the supply chain entirely — nothing here runs code from
+# outside this repository except actions/checkout.
+#
+# NOTE: this job commits to `main`, which is a protected branch. For the push to
+# succeed, GitHub Actions must be allowed to bypass that protection — see the
+# note at the top of activity.yml for the one repository setting it needs.
+
+on:
+  schedule:
+    - cron: "0 2 * * *" # Every day at 02:00 UTC, after the activity job
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gists
+  cancel-in-progress: true
+
+jobs:
+  gists:
+    name: Update the latest gists section
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Render the gists section
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OWNER: ${{ github.repository_owner }}
+          MAX_GISTS: "5"
+        run: python3 .github/scripts/update_gists.py
+
+      - name: Commit if the section changed
+        run: |
+          if git diff --quiet -- README.md; then
+            echo "::notice::No gist changes to publish."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore: update latest gists [skip ci]"
+          git push

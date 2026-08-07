@@ -1,58 +1,70 @@
 <div align="center">
 
-# Rahul Rocket
+# Rahul Rathore
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner/profile-banner-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/banner/profile-banner-light.svg">
-  <img alt="Senior Full Stack Engineer · AI Engineer · SaaS Builder · Cloud Architect — working with TypeScript, Angular, NestJS and Node.js" src="assets/banner/profile-banner-light.svg" width="100%">
+  <img alt="Rahul Rathore — Senior Full Stack Engineer building AI applications, React & Next.js SaaS, and developer tools with TypeScript, React, Next.js, Node.js and NestJS" src="assets/banner/profile-banner-light.svg" width="100%">
 </picture>
 
-Senior Full Stack Engineer · AI Engineer · Cloud Architect<br>
-Open Source Developer · SaaS Builder · Developer Tools Enthusiast
+**Senior Full Stack Engineer**<br>
+Building AI applications, React &amp; Next.js SaaS, and developer tools.
+
+`TypeScript` · `React` · `Next.js` · `Node.js` · `NestJS` · `AI`
+
+🤖 AI engineering · 🧠 LLM applications · ⚛️ React &amp; Next.js · ☁️ Cloud native · 🚀 SaaS products
 
 Core developer at [@ever-co](https://github.com/ever-co) · Ahmedabad, India
 
-I build business platforms end to end and ship them as inspectable work — a
-repository, a demo, or a stated status.
-
 [Website](https://rahul-rocket.github.io) ·
 [LinkedIn](https://www.linkedin.com/in/rahul-rathore-940380108/) ·
-[GitHub](https://github.com/rahul-rocket) ·
+[Email](mailto:rahulrathore576@gmail.com) ·
+[X](https://x.com/rahulrathore576) ·
 [Upwork](https://www.upwork.com/freelancers/~01192228420671270c)
 
 </div>
 
 ---
 
-## About
+## About Me
 
-Most of my work sits in the TypeScript ecosystem: **Angular** on the front end,
-**NestJS** and **Node.js** on the back end, with **PHP/Laravel** in earlier
-chapters of my career. I spend my time on business platforms that have to hold
-up under real use — ERP, CRM and HRM systems — and on the tools that make
-building them faster.
+I build business platforms end to end and ship them as inspectable work — a
+repository, a demo, or a stated status.
 
-- **Full stack engineering** — Angular front ends backed by NestJS/Express
-  APIs, over REST and GraphQL.
-- **SaaS & business platforms** — core development on ERP/CRM/HRM products at
-  [Ever Co.](https://github.com/ever-co)
-- **Open source** — contributions to Ever Gauzy, Ever Gauzy Teams, and Angular
-  ecosystem libraries.
+Most of my work sits in the TypeScript ecosystem: **React** and **Next.js** on
+the product side, **Angular** on the platforms I maintain, and **NestJS** and
+**Node.js** behind them. I spend my time on systems that have to hold up under
+real use — ERP, CRM and HRM — and on the tools that make building them faster.
+
+- **AI applications** — LLM-backed product work; the focus I am building
+  toward, and the one with the least public surface today.
+- **React &amp; Next.js** — product front ends and statically exported sites,
+  built with a typed content model and real performance budgets.
+- **SaaS &amp; business platforms** — core development on ERP/CRM/HRM products
+  at [Ever Co.](https://github.com/ever-co)
 - **Developer tools** — reusable NestJS modules, such as a dual
   TypeORM/MikroORM integration.
 
 <!--
-  TODO (Rahul): the hero already positions you as an AI Engineer and Cloud
-  Architect. This list is the evidence behind the positioning, so these two
-  bullets are left for you rather than filled with a generic sentence — add
-  them naming the actual product and capability:
+  TODO (Rahul): the hero now leads with AI, and this list is the evidence
+  behind that positioning. The AI bullet above is deliberately honest about
+  having no public proof yet, because nothing under github.com/rahul-rocket
+  demonstrates it — gpt-chatbot is an empty README. It is the single weakest
+  point on the profile: a recruiter who reads "AI applications" and then finds
+  no AI repository trusts the rest of the page less.
 
-  - **AI engineering** — …
-  - **Cloud architecture** — …
+  The fix is one public artifact, not better wording. Rewrite the bullet the
+  moment you have one:
+
+  - **AI applications** — <what you built>, using <models/tooling>. <link>
+
+  Cloud architecture was also in the previous hero. It is dropped rather than
+  restated, since the same evidence problem applies; add it back with a bullet
+  that names the platform and what you run on it.
 -->
 
-## Currently
+## Current Focus
 
 - Building
   **[rahul-rocket.github.io](https://github.com/rahul-rocket/rahul-rocket.github.io)**
@@ -60,6 +72,8 @@ building them faster.
   test suite, and accessibility budgets.
 - Core development on **[Ever Gauzy](https://github.com/ever-co/ever-gauzy)**,
   an open-source ERP/CRM/HRM platform.
+- Moving product work toward **LLM-backed applications** — the positioning in
+  the hero, still ahead of its public record.
 
 ## Featured Projects
 
@@ -78,11 +92,17 @@ building them faster.
     4. **Links**  — replace the placeholder with a repository and/or live URL,
                     or delete the line if the product has no public surface
 
+  A screenshot sells a product far better than a link does. Once a card is
+  filled in, drop a capture into assets/images/ and add it under the heading:
+
+    <img alt="CreatorOS — <what the screenshot shows>" src="assets/images/creatoros.png" width="100%">
+
   Delete a whole card if a product should not be listed publicly yet.
 
   The block stays commented out so the live profile never shows half-empty
-  cards. Fill a card in, then move it above this comment to publish it — the
-  products should lead this section, ahead of the two repositories below.
+  cards. Fill a card in, then move it above this comment to publish it — these
+  products should lead this section, ahead of the two repositories below, and
+  CreatorOS and PDFily are the two that carry the AI positioning.
   ─────────────────────────────────────────────────────────────────────────────
 
 ### CreatorOS
@@ -153,19 +173,12 @@ for injecting repositories.
 <!--
   TODO (Rahul): https://github.com/rahul-rocket/gpt-chatbot has no description
   and its README is a single heading, so there is nothing factual to write a
-  card from. Fill in a one-line description, stack, and status — or leave it
-  out of the featured list.
+  card from. It is also the only repository whose name suggests AI work, which
+  makes it the cheapest way to close the gap flagged in About Me — give it a
+  README and a description, then add a card here.
 -->
 
-## Open Source Contributions
-
-| Project | Role |
-| --- | --- |
-| [Ever Gauzy](https://github.com/ever-co/ever-gauzy) — open-source ERP/CRM/HRM platform | Core developer |
-| [Ever Gauzy Teams](https://github.com/ever-co/ever-gauzy-teams) — work & project management platform | Backend API developer |
-| [ngx-daterangepicker-material](https://github.com/fetrarij/ngx-daterangepicker-material) | UI fix (empty ranges) |
-
-## Skills
+## Tech Stack
 
 Grouped by role rather than listed as badges, so the table stays readable on a
 phone and honest about what is actually in daily use.
@@ -173,26 +186,28 @@ phone and honest about what is actually in daily use.
 | Category | Technologies |
 | --- | --- |
 | **Languages** | TypeScript, JavaScript, PHP |
-| **Frontend** | Angular, Angular Material, React, HTML, CSS, Bootstrap |
+| **Frontend** | React, Next.js, Angular, Angular Material, HTML, CSS, Bootstrap |
 | **Backend** | NestJS, Node.js, Express, RxJS, Laravel, Lumen, CodeIgniter |
 | **Databases** | PostgreSQL, MySQL, MongoDB, SQLite |
 | **APIs** | REST, GraphQL, third-party & payment gateway integrations |
 | **Tools** | Git, GitHub, GitLab, GitHub Actions |
 
 <!--
-  TODO (Rahul): the Cloud, DevOps, AI and Testing rows you asked for are drafted
-  below with candidate technologies. They are commented out so the table never
-  renders empty cells. Trim each list to what you actually use, then paste the
-  rows into the table above (before the Tools row) and delete this comment.
+  TODO (Rahul): the AI, Cloud, DevOps and Testing rows are drafted below with
+  candidate technologies. They are commented out so the table never renders a
+  row you cannot back up — and the AI row matters most, because the hero now
+  leads with AI while this table does not mention it. Trim each list to what
+  you actually use, then paste the rows into the table above and delete this
+  comment. The AI row belongs first, directly under the header.
 
-| **Cloud** | AWS / GCP / Azure / DigitalOcean / Vercel / Cloudflare |
+| **AI** | OpenAI / Anthropic APIs, LangChain, Vercel AI SDK, MCP, embeddings, vector databases |
+| **Cloud** | AWS / GCP / Azure / DigitalOcean / Vercel / Supabase / Firebase / Cloudflare |
 | **DevOps** | Docker, Kubernetes, Terraform, Nginx, CI/CD pipelines |
-| **AI** | OpenAI & Anthropic APIs, LangChain, embeddings, vector databases |
 | **Testing** | Jest, Vitest, Playwright, Cypress, supertest |
 
 -->
 
-## GitHub
+## GitHub Metrics
 
 <div align="center">
 
@@ -215,16 +230,9 @@ phone and honest about what is actually in daily use.
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=rahul-rocket&hide_border=true&theme=github-dark">
-  <img alt="Rahul's contribution streak: current streak, longest streak and total contributions" src="https://streak-stats.demolab.com/?user=rahul-rocket&hide_border=true">
-</picture>
-
-<picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=rahul-rocket&hide_border=true&theme=github-compact">
   <img alt="Graph of Rahul's contribution activity over the past year" src="https://github-readme-activity-graph.vercel.app/graph?username=rahul-rocket&hide_border=true&theme=github-light">
 </picture>
-
-### 🐍 Contribution Snake Graph
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/rahul-rocket/rahul-rocket/output/github-contribution-grid-snake-dark.svg">
@@ -233,6 +241,12 @@ phone and honest about what is actually in daily use.
 </picture>
 
 <!--
+  The streak-stats card used to sit between the language cards and the activity
+  graph. It was dropped: current streak, longest streak and total contributions
+  are a fourth restatement of the same contribution history the stats card and
+  the two graphs already show, and it was the widget most likely to read as
+  padding rather than evidence.
+
   TODO (Rahul): a lowlighter/metrics panel is wired up in
   .github/workflows/metrics.yml but stays skipped until you add a METRICS_TOKEN
   secret. Once it runs and commits assets/metrics/metrics.svg, add it here:
@@ -241,7 +255,15 @@ phone and honest about what is actually in daily use.
 
 </div>
 
-## Recent Activity
+## Open Source Contributions
+
+| Project | Role |
+| --- | --- |
+| [Ever Gauzy](https://github.com/ever-co/ever-gauzy) — open-source ERP/CRM/HRM platform | Core developer |
+| [Ever Gauzy Teams](https://github.com/ever-co/ever-gauzy-teams) — work & project management platform | Backend API developer |
+| [ngx-daterangepicker-material](https://github.com/fetrarij/ngx-daterangepicker-material) | UI fix (empty ranges) |
+
+### Recent Activity
 
 <!--
   Written by .github/workflows/activity.yml. Do not edit between the markers —
@@ -253,29 +275,53 @@ phone and honest about what is actually in daily use.
 1. Waiting on the first run of the [Recent Activity workflow](.github/workflows/activity.yml) — it publishes the five most recent public events here, daily.
 <!--END_SECTION:activity-->
 
+## Latest Gists
+
+<!--
+  Written by .github/workflows/gists.yml. Do not edit between the markers —
+  the next run overwrites everything there, including the placeholder below.
+  The workflow lists the five most recently updated public gists on the
+  account; if there are none, it leaves a line saying so rather than an empty
+  section.
+-->
+<!--START_SECTION:gists-->
+1. Waiting on the first run of the [Latest Gists workflow](.github/workflows/gists.yml) — it publishes the five most recently updated public gists here, daily.
+<!--END_SECTION:gists-->
+
 ---
 
 ## 📫 Get in Touch
 
-The hero above carries the same four links as a compact row; this section says
-what each one is actually for, so the two are not simply a repeat of one
-another.
+The hero above carries the same links as a compact row; this section says what
+each one is actually for, so the two are not simply a repeat of one another.
 
 | Channel | Best for |
 | --- | --- |
-| [Website](https://rahul-rocket.github.io) | Longer-form background and the professional record |
-| [LinkedIn](https://www.linkedin.com/in/rahul-rathore-940380108/) | Roles, introductions, and anything hiring-related |
-| [GitHub](https://github.com/rahul-rocket) | Issues, pull requests, and questions about the code |
-| [Upwork](https://www.upwork.com/freelancers/~01192228420671270c) | Contract and freelance engagements |
+| 🌐 [Website](https://rahul-rocket.github.io) | Longer-form background and the professional record |
+| 💼 [LinkedIn](https://www.linkedin.com/in/rahul-rathore-940380108/) | Roles, introductions, and anything hiring-related |
+| 📧 [Email](mailto:rahulrathore576@gmail.com) | Direct enquiries and anything that needs a written reply |
+| 🐦 [X](https://x.com/rahulrathore576) | Short-form updates on what I am building |
+| 💬 [GitHub](https://github.com/rahul-rocket) | Issues, pull requests, and questions about the code |
+| 🤝 [Upwork](https://www.upwork.com/freelancers/~01192228420671270c) | Contract and freelance engagements |
+| 📍 Ahmedabad, India | Timezone IST (UTC+5:30) |
 
 <!--
+  TODO (Rahul): you asked for a Discord row. It is left out rather than guessed
+  — add it with your handle or an invite link:
+
+  | 💬 [Discord](https://discord.com/users/<your-id>) | Quick questions and community chat |
+
   Preserved from the previous README — uncomment any of these to publish them again.
   - **GitLab** — [rahulrathore576](https://gitlab.com/rahulrathore576)
   - **Stack Overflow** — [rahul-rathore](https://stackoverflow.com/users/11013906/rahul-rathore)
-  - **Email** — <mailto:rahulrathore576@gmail.com>
-  - **Twitter** — [@rahulrathore576](https://twitter.com/rahulrathore576)
   - **Freelancer** — [rahulrathore576](https://www.freelancer.in/u/rahulrathore576)
 -->
 
+---
+
+<div align="center">
+
 Every project above links to its source. Read the code first — then get in
 touch if it raises a question worth answering.
+
+</div>
