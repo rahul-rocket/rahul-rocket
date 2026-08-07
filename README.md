@@ -44,12 +44,17 @@ faster.
 | 🏢 **Ever Gauzy** | Core development on an open-source ERP/CRM/HRM platform |
 
 <!--
-  TODO (Rahul): this list is positioning, and the Featured Projects section
-  below is the evidence for it. The AI and MCP rows are the two with the least
-  public surface today — nothing under github.com/rahul-rocket demonstrates
-  either one (gpt-chatbot is an empty README). That gap is the single weakest
-  point on this profile: a recruiter who reads "AI applications" and then finds
-  no AI repository trusts the rest of the page less.
+  TODO (Rahul): this list is the positioning, and Featured Projects below is
+  the evidence for it. Four of its six cards render; CreatorOS and Planix are
+  hidden inside that section.
+
+  The AI and MCP rows are the weakest of the six: nothing under
+  github.com/rahul-rocket demonstrates either one (gpt-chatbot is an empty
+  README). Hiding CreatorOS — the card that carried the AI positioning — costs
+  the AI row its only supporting entry, leaving PDFily as the sole card on the
+  page that mentions AI at all, and it is not public either. A recruiter who
+  reads "AI applications" and then finds no AI repository trusts the rest of
+  the page less.
 
   The fix is one public artifact, not better wording. A small MCP server with a
   real README would close both rows at once.
@@ -58,10 +63,10 @@ faster.
 ## Featured Projects
 
 <!--
-  TODO (Rahul): every product card below carries the one-line description you
-  gave, and nothing beyond it. Stack and status are marked as private rather
-  than guessed, because none of these four repositories is public — they do not
-  appear under github.com/rahul-rocket. Fill each card in as it becomes public:
+  TODO (Rahul): the product cards carry the one-line description you gave, and
+  nothing beyond it. Stack and status are marked as private rather than
+  guessed, because none of those repositories is public — they do not appear
+  under github.com/rahul-rocket. Fill each card in as it becomes public:
 
     - **Stack** · the technologies actually used
     - **Status** · In production / Private beta / In development / Paused
@@ -70,8 +75,24 @@ faster.
   A screenshot sells a product far better than a line of text. Drop a capture
   into assets/images/ and add it under the heading:
 
-    <img alt="CreatorOS — what the screenshot shows" src="assets/images/creatoros.png" width="100%">
+    <img alt="PDFily — what the screenshot shows" src="assets/images/pdfily.png" width="100%">
 -->
+
+<!--
+  ═══════════════════════════════════════════════════════════════════════════
+  HIDDEN AT RAHUL'S REQUEST — the CreatorOS and Planix cards only.
+
+  Everything from here to the end marker is one HTML comment, so neither card
+  renders. The rest of the section is live.
+
+  To republish: delete this opening comment line and the closing one after the
+  Planix card. Do NOT put another HTML comment inside this block — comments do
+  not nest, so the first inner closing delimiter would end the block early and
+  leak the rest onto the live profile.
+
+  Both cards belong at the TOP of this section when they return: they lead the
+  product list, and CreatorOS is the one that carries the AI positioning.
+  ═══════════════════════════════════════════════════════════════════════════
 
 ### CreatorOS · AI Software Engineering Platform
 
@@ -90,6 +111,9 @@ Project management SaaS built for modern product teams.
 - **Status** · In development, private repository
 
 ---
+
+  END of the hidden CreatorOS and Planix cards.
+-->
 
 ### PDFily · AI PDF Editor
 
@@ -142,17 +166,34 @@ decorators for injecting repositories.
 | [ngx-daterangepicker-material](https://github.com/fetrarij/ngx-daterangepicker-material) | UI fix (empty ranges) |
 | [nestjs-multi-orm](https://github.com/rahul-rocket/nestjs-multi-orm) — dual-ORM NestJS module | Author |
 
-### Recent Activity
-
 <!--
-  Written by .github/workflows/activity.yml. Do not edit between the markers —
-  the next run overwrites everything there, including the placeholder below.
-  The placeholder exists so this section never renders as a bare heading with
-  nothing under it while waiting for the workflow's first run.
+  ═══════════════════════════════════════════════════════════════════════════
+  HIDDEN AT RAHUL'S REQUEST — the Recent Activity subsection, to be added back
+  later.
+
+  This one had to be REMOVED rather than commented out, unlike Featured
+  Projects. Its content sat between two marker comments named
+  START_SECTION:activity and END_SECTION:activity, and HTML comments do not
+  nest — wrapping them in an outer comment would have ended that comment at
+  the first marker's closing delimiter and leaked the rest onto the profile.
+  So the heading, the markers and the placeholder line are deleted here; git
+  history holds them verbatim.
+
+  Because .github/workflows/activity.yml fails when the markers are absent,
+  its daily schedule is disabled in the same change. Nothing runs and nothing
+  fails while the section is away.
+
+  To bring it back, restore both at once — the section without the workflow is
+  a heading that never updates, and the workflow without the section is a
+  daily failing job:
+
+    git show 4471f5b:README.md          # copy the subsection back, markers included
+    then re-enable the `schedule:` trigger in .github/workflows/activity.yml
+
+  The subsection belonged directly under the Open Source table, above
+  Technical Expertise.
+  ═══════════════════════════════════════════════════════════════════════════
 -->
-<!--START_SECTION:activity-->
-1. Waiting on the first run of the [Recent Activity workflow](.github/workflows/activity.yml) — it publishes the five most recent public events here, daily.
-<!--END_SECTION:activity-->
 
 ## Technical Expertise
 
@@ -264,8 +305,8 @@ phone and honest about what is actually in daily use.
 
   Claims like these earn their place once each one points at something a
   reader can open. "5+ production SaaS" becomes credible the moment the
-  Featured Projects cards above carry live URLs; until then it is the same
-  assertion, only louder.
+  Featured Projects cards carry live URLs — today only two of them link
+  anywhere at all. Until then it is the same assertion, only louder.
 -->
 
 ## Latest Gists
