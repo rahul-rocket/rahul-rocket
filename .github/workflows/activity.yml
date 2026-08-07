@@ -1,0 +1,36 @@
+name: Recent Activity
+
+# Rewrites the list between the <!--START_SECTION:activity--> and
+# <!--END_SECTION:activity--> markers in README.md with the most recent public
+# GitHub events for this account. If those markers are removed from the README
+# the action fails, so keep them in place.
+
+on:
+  schedule:
+    - cron: "0 1 * * *" # Every day at 01:00 UTC, after snake and metrics
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: activity
+  cancel-in-progress: true
+
+jobs:
+  activity:
+    name: Update recent activity
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Update the activity section
+        uses: jamesgeorge007/github-activity-readme@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          COMMIT_MSG: "chore: update recent activity [skip ci]"
+          MAX_LINES: 5

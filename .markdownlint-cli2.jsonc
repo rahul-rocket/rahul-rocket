@@ -1,0 +1,26 @@
+{
+  // Markdown rules for a GitHub profile README. Run with:
+  //   npx markdownlint-cli2 "**/*.md"
+  "config": {
+    "default": true,
+
+    // A profile README needs raw HTML: <picture> for theme-aware images,
+    // <div align="center"> for the hero, and <br> inside centred blocks.
+    "MD033": false,
+
+    // The file opens with the centred hero block, not a heading.
+    "MD041": false,
+
+    // Prose is wrapped at 80 characters, but that stays a convention rather
+    // than a lint rule: a widget's <source srcset="…"> is a single unbreakable
+    // URL well past 80 columns, and so is the hero's alt text. Enforcing the
+    // rule would mean an inline disable comment on every one of them.
+    "MD013": false,
+
+    // Bare URLs are wrapped in <...> where they appear; this rule misfires on
+    // the query strings in widget URLs.
+    "MD034": false
+  },
+  "globs": ["**/*.md"],
+  "ignores": ["node_modules/**", "archive/**"]
+}
