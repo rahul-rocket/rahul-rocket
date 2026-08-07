@@ -133,12 +133,27 @@ def main() -> None:
             try:
                 result = request("POST", "/gists", token, payload)
             except urllib.error.HTTPError as error:
-                if error.code in (401, 403, 404):
+                if error.code == 404:
                     die(
-                        f"Creating a gist for {key} returned {error.code}. The "
-                        "token is almost certainly missing the 'gist' scope — "
-                        "GitHub returns 404, not 403, for a scope it will not "
-                        "grant."
+                        f"Creating a gist for {key} returned 404. GitHub "
+                        "returns 404, not 403, for a scope it will not grant, "
+                        "so GIST_TOKEN is almost certainly missing the 'gist' "
+                        "scope. Note that a fine-grained token cannot reach "
+                        "gists at all — it must be a classic PAT."
+                    )
+                if error.code == 401:
+                    die(f"GIST_TOKEN was rejected as invalid or expired.")
+                if error.code == 403:
+                    # Not a scope problem: GitHub uses 404 for those. Most
+                    # likely secondary rate limiting, or an egress proxy
+                    # between this job and api.github.com that only permits
+                    # repository-scoped paths.
+                    die(
+                        f"Creating a gist for {key} returned 403. This is not "
+                        "a missing scope. Check the response body in the log "
+                        "above: a 'documentation_url' pointing anywhere other "
+                        "than docs.github.com means a proxy blocked the call, "
+                        "not GitHub."
                     )
                 die(f"Creating a gist for {key} failed: {error.code}")
             verb = "created"
