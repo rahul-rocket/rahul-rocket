@@ -121,3 +121,44 @@ modified by this change. `gh-pages` holds an old copy of the README and
 workflow, and `master` is a stale duplicate of an early `main`; both are
 independent historical records and are best left alone unless you decide to
 clean them up deliberately.
+
+## 2026-08-07-v4.3.0 — Latest Gists removed
+
+Snapshot taken before v4.4.0 removed the `Latest Gists` section from the profile
+README, together with the automation that wrote it.
+
+Three files are preserved: the v4.3.0 `README.md`, `.github/workflows/gists.yml`,
+and `.github/scripts/update_gists.py`.
+
+### Why it went
+
+The section was a heading whose only rendered content was an explanation of its
+own emptiness. The account has no public gists, so every run wrote the
+placeholder line — "Waiting on the first run of the Latest Gists workflow" —
+and a reader arriving at a `Latest Gists` heading learned only that there were
+none. An empty section is worse than an absent one: it draws the eye to a gap.
+
+The workflow also ran daily against a protected `main`, so it carried the
+`github-actions[bot]` bypass requirement and a commit-on-change step for a
+section that could not change until the account had gists.
+
+### What was not the reason
+
+Nothing was wrong with the workflow. It is pinned, least-privilege, has a
+concurrency group, and runs a standard-library script rather than a third-party
+action — which is why it was archived intact rather than rewritten. The problem
+was that it had nothing to publish.
+
+### Restoring it
+
+Bring back all three files and the marker pair together — see the archive
+[README](README.md) for the exact steps. The workflow fails by design when the
+`START_SECTION:gists` / `END_SECTION:gists` markers are missing from
+`README.md`, so restoring the workflow alone converts a removed section into a
+daily failing job.
+
+The natural trigger to restore is the first few gists landing on
+<https://gist.github.com/rahul-rocket>. The `gists/` directory in this
+repository holds the source text for those, written to be published as gists;
+once several are live, this section becomes a real index rather than a
+placeholder.

@@ -42,28 +42,28 @@ need both.
 
 ### Check the workflows
 
-All five workflows can be run by hand from the Actions tab — each declares
+All four workflows can be run by hand from the Actions tab — each declares
 `workflow_dispatch`. `metrics.yml` will skip every step and pass as a no-op
 unless a `METRICS_TOKEN` secret exists; that is expected, not a failure.
 
-Three things to know before changing them:
+Two things to know before changing them:
 
 - **Every `uses:` is pinned to a release tag.** Never `@master` or `@latest` —
   an unpinned reference lets an unreviewed upstream change run against this
   repository's write token. Bump a pin deliberately, in its own commit.
-- **`activity.yml`, `gists.yml` and `metrics.yml` push to `main`, which is
-  protected.** Their pushes only land if `github-actions[bot]` is allowed to
-  bypass the branch rule; see the comment at the top of `activity.yml`.
-  `snake.yml` is unaffected — it publishes to the unprotected `output` branch.
-- **`gists.yml` runs a script in this repository**, `.github/scripts/update_gists.py`,
-  rather than a third-party action: no pinned action exists for gists, and a
-  short standard-library script keeps the job off the supply chain. It writes
-  only between the `gists` markers in the README and exits non-zero if they are
-  missing, so a broken section fails the run instead of going stale.
+- **`activity.yml` and `metrics.yml` push to `main`, which is protected.** Their
+  pushes only land if `github-actions[bot]` is allowed to bypass the branch
+  rule; see the comment at the top of `activity.yml`. `snake.yml` is unaffected
+  — it publishes to the unprotected `output` branch.
 
-Both the `activity` and `gists` sections are machine-written between HTML
-markers. Do not hand-edit inside them — the next run overwrites whatever is
-there, and removing a marker fails the job.
+The `activity` section is machine-written between HTML markers. Do not
+hand-edit inside it — the next run overwrites whatever is there, and removing a
+marker fails the job.
+
+A fifth workflow, `gists.yml`, wrote a `Latest Gists` section the same way until
+v4.4.0. It and its script are archived in
+[`archive/2026-08-07-v4.3.0/`](archive/2026-08-07-v4.3.0/) — see
+[`archive/notes.md`](archive/notes.md) for why, and for what restoring it takes.
 
 ## Conventions
 

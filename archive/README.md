@@ -11,18 +11,25 @@ archive/
 │   ├── README.md                original profile README
 │   └── workflows/
 │       └── snake.yml            original snake workflow
-└── 2026-08-07-v3.0.0/       Profile at v3.0.0, before the brand rebuild
-    ├── README.md                v3.0.0 profile README
-    └── banner/
-        ├── profile-banner-dark.svg    v3.0.0 banner, dark
-        └── profile-banner-light.svg   v3.0.0 banner, light
+├── 2026-08-07-v3.0.0/       Profile at v3.0.0, before the brand rebuild
+│   ├── README.md                v3.0.0 profile README
+│   └── banner/
+│       ├── profile-banner-dark.svg    v3.0.0 banner, dark
+│       └── profile-banner-light.svg   v3.0.0 banner, light
+└── 2026-08-07-v4.3.0/       Profile at v4.3.0, before Latest Gists was removed
+    ├── README.md                v4.3.0 profile README
+    ├── workflows/
+    │   └── gists.yml            the Latest Gists workflow
+    └── scripts/
+        └── update_gists.py      the script that workflow ran
 ```
 
 - **[notes.md](notes.md)** — what was archived, and why, item by item.
 
 Two snapshots were taken on 2026-08-07, so the second carries the version it
 preserves as a suffix. Name any future snapshot `<YYYY-MM-DD>-v<version>` —
-dates alone collide, as these two nearly did.
+dates alone collide, as these two nearly did. The third, `-v4.3.0`, follows that
+rule; the bare `2026-08-07` directory predates it and is left as-is.
 
 ## Restoring something
 
@@ -33,6 +40,20 @@ v3.0.0, before the brand rebuild:
 cp archive/2026-08-07-v3.0.0/README.md README.md
 cp archive/2026-08-07-v3.0.0/banner/*.svg assets/banner/
 ```
+
+To restore the `Latest Gists` section and the automation behind it:
+
+```bash
+cp archive/2026-08-07-v4.3.0/workflows/gists.yml .github/workflows/gists.yml
+mkdir -p .github/scripts
+cp archive/2026-08-07-v4.3.0/scripts/update_gists.py .github/scripts/
+```
+
+Then copy the `## Latest Gists` heading and its `START_SECTION`/`END_SECTION`
+marker pair back into `README.md` — take them from
+`archive/2026-08-07-v4.3.0/README.md`. The workflow exits non-zero when those
+markers are absent, so restoring the two files without the markers turns a
+removed section into a daily failing job.
 
 To restore the original pre-redesign profile:
 
