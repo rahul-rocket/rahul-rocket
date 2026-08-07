@@ -44,15 +44,13 @@ faster.
 | 🏢 **Ever Gauzy** | Core development on an open-source ERP/CRM/HRM platform |
 
 <!--
-  TODO (Rahul): this list is the positioning, and Featured Projects below is
-  the evidence for it. Four of its six cards render; CreatorOS and Planix are
-  hidden inside that section.
+  TODO (Rahul): this list is the positioning, and Featured Projects below was
+  the evidence for it. That whole section is now hidden, so this list stands
+  alone: the page asserts six areas of work and shows nothing to back any of
+  them.
 
-  The AI and MCP rows are the weakest of the six: nothing under
-  github.com/rahul-rocket demonstrates either one (gpt-chatbot is an empty
-  README). Hiding CreatorOS — the card that carried the AI positioning — costs
-  the AI row its only supporting entry, leaving PDFily as the sole card on the
-  page that mentions AI at all, and it is not public either. A recruiter who
+  The AI and MCP rows are the weakest: nothing under github.com/rahul-rocket
+  demonstrates either one (gpt-chatbot is an empty README). A recruiter who
   reads "AI applications" and then finds no AI repository trusts the rest of
   the page less.
 
@@ -60,9 +58,26 @@ faster.
   real README would close both rows at once.
 -->
 
+<!--
+  ═══════════════════════════════════════════════════════════════════════════
+  HIDDEN AT RAHUL'S REQUEST — the ENTIRE Featured Projects section, heading
+  and all six cards.
+
+  Everything from here to the end marker is one HTML comment, so nothing in
+  the section renders. To republish: delete this opening comment line and the
+  closing one at the end of the block, then restore the inner comments (the
+  card-template TODO and the CreatorOS/Planix note) to real HTML comments —
+  their delimiters were stripped below because comments do not nest, and the
+  first inner closing delimiter would end this block early and leak the rest
+  onto the live profile.
+
+  Card order is preserved: CreatorOS and Planix lead the section — they were
+  previously hidden on their own, and CreatorOS is the card that carries the
+  AI positioning.
+  ═══════════════════════════════════════════════════════════════════════════
+
 ## Featured Projects
 
-<!--
   TODO (Rahul): the product cards carry the one-line description you gave, and
   nothing beyond it. Stack and status are marked as private rather than
   guessed, because none of those repositories is public — they do not appear
@@ -76,23 +91,6 @@ faster.
   into assets/images/ and add it under the heading:
 
     <img alt="PDFily — what the screenshot shows" src="assets/images/pdfily.png" width="100%">
--->
-
-<!--
-  ═══════════════════════════════════════════════════════════════════════════
-  HIDDEN AT RAHUL'S REQUEST — the CreatorOS and Planix cards only.
-
-  Everything from here to the end marker is one HTML comment, so neither card
-  renders. The rest of the section is live.
-
-  To republish: delete this opening comment line and the closing one after the
-  Planix card. Do NOT put another HTML comment inside this block — comments do
-  not nest, so the first inner closing delimiter would end the block early and
-  leak the rest onto the live profile.
-
-  Both cards belong at the TOP of this section when they return: they lead the
-  product list, and CreatorOS is the one that carries the AI positioning.
-  ═══════════════════════════════════════════════════════════════════════════
 
 ### CreatorOS · AI Software Engineering Platform
 
@@ -111,9 +109,6 @@ Project management SaaS built for modern product teams.
 - **Status** · In development, private repository
 
 ---
-
-  END of the hidden CreatorOS and Planix cards.
--->
 
 ### PDFily · AI PDF Editor
 
@@ -156,6 +151,9 @@ decorators for injecting repositories.
 - **Stack** · TypeScript, NestJS, TypeORM, MikroORM
 - **Status** · Paused — last updated April 2024
 - **Links** · [Repository](https://github.com/rahul-rocket/nestjs-multi-orm)
+
+  END of the hidden Featured Projects section.
+-->
 
 ## Open Source
 
@@ -347,8 +345,8 @@ implementation stay mine — AI accelerates development, not decision making.
 
   Claims like these earn their place once each one points at something a
   reader can open. "5+ production SaaS" becomes credible the moment the
-  Featured Projects cards carry live URLs — today only two of them link
-  anywhere at all. Until then it is the same assertion, only louder.
+  Featured Projects cards carry live URLs — today that section is hidden
+  entirely. Until then it is the same assertion, only louder.
 -->
 
 ## Latest Gists

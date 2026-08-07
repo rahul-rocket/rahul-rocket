@@ -3,6 +3,27 @@
 All notable changes to this profile repository are recorded here. The format
 follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [4.3.0] — 2026-08-07
+
+### Hidden
+
+- **The entire `Featured Projects` section**, heading and all six cards, wrapped
+  in a single HTML comment. This supersedes the 4.1.0 change that hid only
+  CreatorOS and Planix; that inner comment block and the card-template TODO were
+  both stripped of their `<!--`/`-->` delimiters and left as plain text inside
+  the outer block, because HTML comments do not nest — the first inner closing
+  delimiter would have ended the block early and leaked the rest of the section
+  onto the live profile. The restore instructions in the block say to turn them
+  back into real comments on republish. Card order is unchanged, so the section
+  returns exactly as it was.
+
+  Consequence worth recording: `Currently Building` now asserts six areas of
+  work with nothing on the page backing any of them, and the two verified public
+  cards — `rahul-rocket.github.io` and `nestjs-multi-orm` — were the only links
+  to working, inspectable code outside the `Open Source` table. The TODO
+  comments in `Currently Building` and above `Latest Gists` were both updated to
+  describe the section as hidden rather than partly rendered.
+
 ## [4.2.0] — 2026-08-07
 
 ### Changed
