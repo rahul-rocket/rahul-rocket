@@ -197,10 +197,13 @@ phone and honest about what is actually in daily use.
 <div align="center">
 
 <!--
-  The stats and top-languages cards sit in a single paragraph with no blank
-  line between them, so they render as inline images: side by side on a desktop
-  README (2 × 400px fits the ~880px content column) and stacked on a phone.
-  A blank line here would make them separate paragraphs and force the stack.
+  Inside this raw <div>, GitHub renders each <picture> as an inline sibling
+  rather than wrapping it in a paragraph, so all four cards below share one
+  wrapping line box. Layout is therefore decided by width alone, not by the
+  blank lines between them: 2 × 400px fits the ~880px README content column, so
+  stats and top-languages pair up on desktop and wrap to a stack on a phone.
+  At the previous 450px they totalled 900px and always wrapped. Keep the pair
+  at 400 or below.
 -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=rahul-rocket&show_icons=true&hide_border=true&theme=github_dark&card_width=400">

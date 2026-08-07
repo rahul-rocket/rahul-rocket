@@ -30,10 +30,15 @@ a documented failure mode, and the removal of the last duplicated content.
 
 ### Changed
 
-- **Stats and Top Languages now sit side by side.** They were two separate
-  paragraphs, so they stacked and cost a full screen of scroll. They are now one
-  paragraph of inline images at `card_width=400`, which fits the ~880px README
-  column on desktop and still stacks on a phone.
+- **Stats and Top Languages now sit side by side**, recovering roughly a screen
+  of scroll. `card_width` dropped 450 → 400: inside the centred `<div>` GitHub
+  renders every card as an inline sibling sharing one wrapping line box, so
+  width alone decides the layout. At 450 the pair totalled 900px against a
+  ~880px content column and always wrapped; at 400 they fit, and still stack on
+  a phone. Verified against the live rendered HTML on both branches — the blank
+  lines between the cards turned out to have no effect either way, and the note
+  in the README says so, so the next edit does not preserve a rule that was
+  never real.
 - **The `📫 Get in Touch` section is no longer a verbatim repeat of the hero
   link row.** Same four destinations, now a table stating what each channel is
   actually for. The section and its heading are kept, as previously requested.
