@@ -198,20 +198,57 @@ decorators for injecting repositories.
 Organized by domain to highlight the technologies I use most in modern
 AI-powered product development.
 
+### 🤖 AI Engineering
+
 | Category | Technologies |
 | --- | --- |
-| 🤖 **AI &amp; LLMs** | Claude Code, ChatGPT, GitHub Copilot, OpenAI API, Anthropic API, Google Gemini, Vercel AI SDK, Model Context Protocol (MCP), LangChain |
-| ⚛️ **Frontend** | React, Next.js, TypeScript, Tailwind CSS, shadcn/ui, React Query, TanStack Table, Angular, Angular Material, HTML5, CSS3 |
-| ⚙️ **Backend** | Node.js, NestJS, Express.js, PHP, Laravel, Lumen, CodeIgniter, REST APIs, GraphQL, WebSockets |
-| 🗄️ **Databases** | PostgreSQL, Supabase, MySQL, MongoDB, SQLite |
-| 🧩 **ORM &amp; Data** | Prisma ORM, Drizzle ORM, Supabase Client, TypeORM |
-| ☁️ **Cloud &amp; BaaS** | Vercel, Supabase, Firebase, Cloudflare, AWS, DigitalOcean |
-| 🚀 **DevOps &amp; CI/CD** | Docker, GitHub Actions, GitLab CI/CD, Vercel Deployments, Cloudflare Pages, Linux |
-| 🔌 **APIs &amp; Integrations** | Stripe, Razorpay, Firebase Services, Authentication, OAuth, Payment Gateways, Third-party APIs |
-| 🛠️ **Developer Tools** | Git, GitHub, GitLab, pnpm, Turborepo, Nx, ESLint, Prettier, Postman, VS Code |
-| 🧪 **Testing &amp; Quality** | Vitest, Jest, Playwright, Cypress, Testing Library |
-| 📊 **Monitoring &amp; Analytics** | PostHog, Google Analytics, Google Tag Manager, Sentry |
-| 🎨 **UI &amp; Design Systems** | Tailwind CSS, shadcn/ui, Radix UI, Material UI, Framer Motion |
+| Assistants | Claude Code, ChatGPT, GitHub Copilot, Google Gemini |
+| SDKs | Anthropic API, OpenAI API, Vercel AI SDK |
+| Frameworks | Model Context Protocol (MCP), LangChain |
+
+### ⚛️ Frontend Stack
+
+| Category | Technologies |
+| --- | --- |
+| Frameworks | React, Next.js, Angular |
+| Design systems | Tailwind CSS, shadcn/ui, Radix UI, Material UI, Angular Material, Framer Motion |
+| State &amp; data | React Query, TanStack Table |
+| Languages | TypeScript, JavaScript, HTML5, CSS3 |
+
+### ⚙️ Backend Services
+
+| Category | Technologies |
+| --- | --- |
+| Node.js | Node.js, NestJS, Express.js |
+| PHP | Laravel, Lumen, CodeIgniter |
+| APIs | REST, GraphQL, WebSockets |
+| Integrations | Stripe, Razorpay, OAuth, Firebase Services, third-party APIs |
+
+### 🗄️ Data Platform
+
+| Category | Technologies |
+| --- | --- |
+| Databases | PostgreSQL, MySQL, MongoDB, SQLite |
+| Data access | Prisma ORM, Drizzle ORM, TypeORM, Supabase Client |
+
+### ☁️ Cloud &amp; Delivery
+
+| Category | Technologies |
+| --- | --- |
+| Cloud | AWS, Cloudflare, Vercel, DigitalOcean, Linux |
+| BaaS | Supabase, Firebase |
+| Containers | Docker |
+| CI/CD | GitHub Actions, GitLab CI/CD |
+| Deployment | Vercel Deployments, Cloudflare Pages |
+
+### 🛠️ Developer Experience
+
+| Category | Technologies |
+| --- | --- |
+| Build | pnpm, Turborepo, Nx, ESLint, Prettier |
+| Quality | Vitest, Jest, Playwright, Cypress, Testing Library |
+| Observability | PostHog, Sentry, Google Analytics, Google Tag Manager |
+| Tools | Git, GitHub, GitLab, VS Code, Postman |
 
 ## AI-Native Development Workflow
 
