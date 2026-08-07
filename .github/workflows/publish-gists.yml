@@ -1,0 +1,63 @@
+name: Publish Gists
+
+# Publishes every Markdown file under gists/ to gist.github.com as a public
+# gist, then commits the path -> gist ID mapping back to gists/published.json
+# so later runs update those gists rather than creating duplicates.
+#
+# REQUIRES A SECRET. The built-in GITHUB_TOKEN cannot do this: it is scoped to
+# this repository, and gists are account-level resources. Create a classic PAT
+# with only the `gist` scope and add it as a repository secret named
+# GIST_TOKEN. Without it the job fails immediately with an explanatory message
+# rather than half-publishing.
+#
+# Deliberately manual. Publishing to a public URL under your name is not
+# something to leave on a nightly timer — a typo committed at 23:58 should not
+# be live at 02:00. Run it from the Actions tab when a gist is ready.
+#
+# NOTE: this job commits to `main`, which is a protected branch. For the push to
+# succeed, GitHub Actions must be allowed to bypass that protection — see the
+# note at the top of activity.yml for the one repository setting it needs.
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "List what would be published without calling the API"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-gists
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    name: Publish gists to gist.github.com
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Publish
+        env:
+          GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: python3 .github/scripts/publish_gists.py
+
+      - name: Commit the gist registry
+        if: ${{ !inputs.dry_run }}
+        run: |
+          if git diff --quiet -- gists/published.json; then
+            echo "::notice::No new or changed gist IDs to record."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add gists/published.json
+          git commit -m "chore: record published gist IDs [skip ci]"
+          git push

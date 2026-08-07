@@ -349,21 +349,18 @@ implementation stay mine — AI accelerates development, not decision making.
   entirely. Until then it is the same assertion, only louder.
 -->
 
+## Latest Gists
+
 <!--
-  TODO (Rahul): a `Latest Gists` section stood here, auto-written daily by
-  .github/workflows/gists.yml from the public gists API. It was removed along
-  with that workflow and .github/scripts/update_gists.py, all three archived in
-  archive/2026-08-07-v4.3.0/.
-
-  The reason was that the account has no public gists, so the section rendered
-  a single line explaining that the workflow had not found any — a heading whose
-  only content was an apology for being empty. It also committed to `main` daily
-  whether or not anything changed upstream.
-
-  Restore all three from the snapshot once gist.github.com/rahul-rocket has
-  gists worth listing; the workflow needs no edits, but it fails by design if
-  the START_SECTION/END_SECTION markers are missing, so put those back too.
+  Written by .github/workflows/gists.yml. Do not edit between the markers —
+  the next run overwrites everything there, including the placeholder below.
+  The workflow lists the five most recently updated public gists on the
+  account; if there are none, it leaves a line saying so rather than an empty
+  section.
 -->
+<!--START_SECTION:gists-->
+1. Waiting on the first run of the [Latest Gists workflow](.github/workflows/gists.yml) — it publishes the five most recently updated public gists here, daily.
+<!--END_SECTION:gists-->
 
 ## How I Build
 

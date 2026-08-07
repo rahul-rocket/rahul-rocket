@@ -3,6 +3,59 @@
 All notable changes to this profile repository are recorded here. The format
 follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [4.4.0] — 2026-08-07
+
+### Added
+
+- **A `gists/` knowledge base**, holding production-ready technical reference
+  articles written to be published as public Gists. `gists/README.md` documents
+  the ten-section structure each one follows and the planned categories; the
+  first entry is an MCP server starter in TypeScript.
+- **A `Publish Gists` workflow**, `.github/workflows/publish-gists.yml`, and its
+  script `.github/scripts/publish_gists.py`. It publishes every Markdown file
+  under `gists/` to gist.github.com as a public gist and commits the resulting
+  path → gist ID map to `gists/published.json`, so later runs update those
+  gists in place instead of creating duplicates.
+
+  It requires a `GIST_TOKEN` secret — a classic PAT with only the `gist` scope.
+  The built-in `GITHUB_TOKEN` cannot create gists, because gists are
+  account-level and that token is repository-scoped; fine-grained tokens cannot
+  either. The job fails immediately with that explanation rather than
+  half-publishing.
+
+  Manual-only, with no schedule, and defaulting to a dry run: publishing to a
+  public URL under a personal account is not a thing to leave on a nightly
+  timer. Standard library only, and no third-party action — the same
+  supply-chain reasoning that applied to the removed `update_gists.py`, and
+  more pressing here because the token can write to the account's gists.
+
+### Removed
+
+- **The `Latest Gists` section**, along with `.github/workflows/gists.yml` and
+  `.github/scripts/update_gists.py`. All three are archived in
+  `archive/2026-08-07-v4.3.0/`.
+
+  The account has no public gists, so the section rendered a single line saying
+  the workflow had found none — a heading whose only content was an explanation
+  of its own emptiness, which reads worse than no heading at all. The workflow
+  additionally committed to a protected `main` daily for a section that could
+  not change until gists existed.
+
+  Nothing was wrong with the workflow itself, which is why it was archived
+  intact: it is pinned, least-privilege, and runs a standard-library script
+  rather than a third-party action. Restoring it means bringing back both files
+  *and* the `START_SECTION:gists` / `END_SECTION:gists` markers — it exits
+  non-zero when they are absent, so a partial restore turns a removed section
+  into a daily failing job. A `TODO` comment at the former location in
+  `README.md` records this.
+
+### Changed
+
+- **`CONTRIBUTING.md`** now describes four workflows rather than five, and drops
+  the paragraph on the gists script and the note about hand-editing inside the
+  `gists` markers. It points at the archive for what restoring the workflow
+  takes.
+
 ## [4.3.0] — 2026-08-07
 
 ### Hidden
