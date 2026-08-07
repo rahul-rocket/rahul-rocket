@@ -3,6 +3,66 @@
 All notable changes to this profile repository are recorded here. The format
 follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [4.0.0] — 2026-08-07
+
+Fifth pass, and the one that turns the page from a well-formatted README into
+a developer brand. The positioning moves from a job title to a named identity —
+**AI Engineer · React &amp; Next.js Architect · SaaS Builder · Open Source
+Developer** — and the two sections that were hidden pending correction are
+restored with real content instead of scaffolding.
+
+### Changed
+
+- **Both banner SVGs redrawn** at 1200×320. They now carry a layered gradient
+  field, a glassmorphic content panel with a gradient edge, a faint grid, a
+  three-layer neural-network motif standing in for the AI reference, and a
+  gradient-filled name. Light and dark are separate documents rather than one
+  file with a filter, so each palette is tuned on its own.
+- **Hero rewritten** around the four-part identity line. The emoji focus row
+  was dropped — the banner already carries the same claim, and repeating it
+  immediately underneath weakened both.
+- **`Current Focus` republished as `Currently Building`**, rewritten as a
+  table of what is actively under construction (AI applications, MCP servers,
+  React 19 &amp; Next.js, AI developer tools, full stack SaaS, Ever Gauzy)
+  rather than a list of things being learned.
+- **`Featured Projects` republished** with the four product cards — CreatorOS,
+  Planix, PDFily, KidzoRides — carrying their descriptions. Stack and status
+  read *private, not yet documented publicly* rather than inventing
+  technologies for repositories that are not public. The two verified cards
+  (`rahul-rocket.github.io`, `nestjs-multi-orm`) follow them.
+- **`Tech Stack` renamed to `Technical Expertise`**; `GitHub Metrics` to
+  `GitHub Activity`; `Open Source Contributions` to `Open Source`, which also
+  gained a row for `nestjs-multi-orm` as author.
+- **Sections reordered** to Banner → About Me → Currently Building → Featured
+  Projects → Open Source → Technical Expertise → GitHub Activity → Latest
+  Gists → How I Build → Get in Touch, so identity, proof and impact lead and
+  decoration follows.
+- **Footer replaced with a call to action** — a question, a line on the kind
+  of work being sought, and a direct mail link — in place of the previous
+  single closing sentence.
+
+### Added
+
+- **A `How I Build` section**: a short statement of approach plus three
+  principles (ship inspectable work, type the boundaries, budget for the
+  reader).
+- **Archive snapshot `archive/2026-08-07-v3.0.0/`**, holding the v3.0.0 README
+  and both v3.0.0 banner SVGs byte-identical to what was live, so this rebuild
+  can be reverted without reading git history. The banners are included because
+  the rebuild overwrote them in place — restoring the README alone would leave
+  a banner that no longer matches its text. Snapshot naming gained a version
+  suffix, since this is the second snapshot taken on 2026-08-07 and dates alone
+  collide.
+
+### Not added
+
+- **An achievements block.** Requested, and deliberately left as a comment in
+  the source rather than published. The `profile-details` card immediately
+  above prints real commit, PR and contribution totals; a hand-written
+  "1000+ commits" next to a live figure only creates a chance to be caught
+  disagreeing with it. The comment records what to publish once each claim
+  points at something a reader can open.
+
 ## [3.0.0] — 2026-08-07
 
 Fourth pass, and a repositioning rather than a tidy-up. The previous three

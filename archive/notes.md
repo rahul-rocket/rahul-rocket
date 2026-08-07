@@ -1,5 +1,52 @@
 # Archive notes
 
+## Snapshot `2026-08-07-v3.0.0` — brand rebuild
+
+Preserves the profile as it stood at **v3.0.0**, immediately before the rebuild
+that repositioned it from a job title to a named identity. Everything in the
+snapshot was taken from `origin/main` at commit `f3f1a03` and is byte-identical
+to what was live.
+
+### `README.md`
+
+Archived at `archive/2026-08-07-v3.0.0/README.md`. This is the version whose
+hero read *Senior Full Stack Engineer*, and in which the `Current Focus` and
+`Featured Projects` sections were wrapped in HTML comments and therefore did
+not render.
+
+It is worth keeping for one reason beyond reversibility: it carries the
+scaffolding and TODO comments written while those two sections were hidden,
+including the four-blank card template for the product entries. If a future
+pass needs that template again, it is here rather than several commits back.
+
+### `banner/`
+
+Both banner SVGs are archived because the rebuild **overwrote them in place**
+rather than adding new files — restoring the v3.0.0 README without them would
+produce a page whose banner does not match its text. These are the 1200×260
+versions: flat white or dark background, a ruled grid, a solid accent bar, and
+a four-line text block ending in the strip
+`TYPESCRIPT · REACT · NEXT.JS · NODE.JS · NESTJS · AI`.
+
+The replacements are 1200×320 and differ in kind, not degree: gradient field,
+glassmorphic panel, neural-network motif. If the new banner ever proves too
+heavy for the page, the v3.0.0 pair is the lighter design to fall back to.
+
+### Naming
+
+The earlier snapshot in this file is named for its date alone. This one was
+taken on the same date, so it carries `-v3.0.0` as well. Future snapshots
+should follow `<YYYY-MM-DD>-v<version>`; the original directory is left under
+its bare date rather than renamed, because `archive/README.md` and this file
+both already refer to it by that name.
+
+### What was not archived
+
+No workflow, script or configuration file was modified by the rebuild, so
+`.github/` needed no snapshot. `CHANGELOG.md` and `archive/` are append-only
+records rather than replaced content, and archiving a record of the archive
+would be circular.
+
 ## Snapshot `2026-08-07` — profile modernization
 
 The repository contained exactly two files before this change: `README.md` and
