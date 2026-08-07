@@ -1,0 +1,57 @@
+name: GitHub Metrics
+
+# Renders a lowlighter/metrics panel into assets/metrics/metrics.svg.
+#
+# This workflow is opt-in. It needs a classic personal access token with the
+# `public_repo` scope stored as the repository secret METRICS_TOKEN, because the
+# built-in GITHUB_TOKEN cannot read the account-wide data the action aggregates.
+# Until that secret exists every step is skipped and the run passes as a no-op,
+# so an unconfigured profile never shows a red X.
+
+on:
+  schedule:
+    - cron: "30 0 * * *" # Every day at 00:30 UTC, after the snake job
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: metrics
+  cancel-in-progress: true
+
+jobs:
+  metrics:
+    name: Render metrics panel
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      # `secrets` is not available in a job-level `if`, so the gate lives in a
+      # step that exports a boolean the later steps can read.
+      - name: Check for METRICS_TOKEN
+        id: gate
+        env:
+          METRICS_TOKEN: ${{ secrets.METRICS_TOKEN }}
+        run: |
+          if [ -n "$METRICS_TOKEN" ]; then
+            echo "configured=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "configured=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::METRICS_TOKEN is not set — skipping. See the comment at the top of this workflow."
+          fi
+
+      - name: Generate metrics
+        if: steps.gate.outputs.configured == 'true'
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: ${{ github.repository_owner }}
+          filename: assets/metrics/metrics.svg
+          committer_branch: ${{ github.event.repository.default_branch }}
+          template: classic
+          base: header, activity, community, repositories, metadata
+          config_timezone: Asia/Kolkata
+          plugin_languages: yes
+          plugin_languages_details: bytes-size, percentage
+          plugin_languages_limit: 8
