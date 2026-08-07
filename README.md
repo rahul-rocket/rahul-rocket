@@ -191,11 +191,11 @@ decorators for injecting repositories.
     then re-enable the `schedule:` trigger in .github/workflows/activity.yml
 
   The subsection belonged directly under the Open Source table, above
-  Technical Expertise.
+  the Engineering Toolkit section.
   ═══════════════════════════════════════════════════════════════════════════
 -->
 
-## Technical Expertise
+## 🚀 Engineering Toolkit
 
 Organized by domain to highlight the technologies I use most in modern
 AI-powered product development.

@@ -3,6 +3,27 @@
 All notable changes to this profile repository are recorded here. The format
 follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [4.2.0] — 2026-08-07
+
+### Changed
+
+- **`Technical Expertise` renamed to `🚀 Engineering Toolkit`.** "Toolkit"
+  describes what the table actually is — a list of tools reached for — where
+  "Expertise" made a claim about skill level that the table itself does not
+  support. The comment marking where the hidden `Recent Activity` subsection
+  belonged was updated to the new name, so the restore instructions still point
+  at a heading that exists.
+
+  Two things to note about the emoji, both easy to reverse:
+
+  - It is the only `##` heading on the profile that carries one. Every other
+    section heading is plain text, so this one now reads as deliberately
+    emphasised — fine if that is the intent, inconsistent if not.
+  - 🚀 already appears twice on the page: as the `Full stack SaaS` row icon in
+    `Currently Building`, and as the `DevOps & CI/CD` row icon *inside this
+    section's own table*. A heading that repeats an icon from its own first
+    column dilutes both. 🧰 would carry the "toolkit" idea without colliding.
+
 ## [4.1.0] — 2026-08-07
 
 Follow-up to 4.0.0, narrowing what the profile shows while the products behind
