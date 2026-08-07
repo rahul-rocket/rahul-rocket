@@ -42,9 +42,19 @@ need both.
 
 ### Check the workflows
 
-The two scheduled workflows can be run by hand from the Actions tab — both
-declare `workflow_dispatch`. `metrics.yml` will skip every step and pass as a
-no-op unless a `METRICS_TOKEN` secret exists; that is expected, not a failure.
+All four workflows can be run by hand from the Actions tab — each declares
+`workflow_dispatch`. `metrics.yml` will skip every step and pass as a no-op
+unless a `METRICS_TOKEN` secret exists; that is expected, not a failure.
+
+Two things to know before changing them:
+
+- **Every `uses:` is pinned to a release tag.** Never `@master` or `@latest` —
+  an unpinned reference lets an unreviewed upstream change run against this
+  repository's write token. Bump a pin deliberately, in its own commit.
+- **`activity.yml` and `metrics.yml` push to `main`, which is protected.** Their
+  pushes only land if `github-actions[bot]` is allowed to bypass the branch
+  rule; see the comment at the top of `activity.yml`. `snake.yml` is unaffected
+  — it publishes to the unprotected `output` branch.
 
 ## Conventions
 

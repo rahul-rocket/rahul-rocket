@@ -4,6 +4,12 @@ name: Recent Activity
 # <!--END_SECTION:activity--> markers in README.md with the most recent public
 # GitHub events for this account. If those markers are removed from the README
 # the action fails, so keep them in place.
+#
+# NOTE: this job commits to `main`, which is a protected branch. For the push to
+# succeed, GitHub Actions must be allowed to bypass that protection — Settings →
+# Branches → the `main` rule → "Allow specified actors to bypass required pull
+# requests", with `github-actions[bot]` added. Without it every run fails at the
+# push step with a "protected branch" error. The same applies to metrics.yml.
 
 on:
   schedule:
@@ -27,8 +33,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # Pinned to a release tag rather than @master: an unpinned default branch
+      # means an unreviewed third-party change can run against this repository's
+      # write token the moment it is merged upstream.
       - name: Update the activity section
-        uses: jamesgeorge007/github-activity-readme@master
+        uses: jamesgeorge007/github-activity-readme@v0.4.5
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
