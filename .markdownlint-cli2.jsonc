@@ -19,7 +19,12 @@
 
     // Bare URLs are wrapped in <...> where they appear; this rule misfires on
     // the query strings in widget URLs.
-    "MD034": false
+    "MD034": false,
+
+    // CHANGELOG.md repeats "Added" / "Changed" / "Removed" under every release
+    // heading — that is the Keep a Changelog format, not a mistake. Duplicates
+    // are still caught within a single section.
+    "MD024": { "siblings_only": true }
   },
   "globs": ["**/*.md"],
   "ignores": ["node_modules/**", "archive/**"]
