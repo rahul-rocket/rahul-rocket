@@ -3,6 +3,71 @@
 All notable changes to this profile repository are recorded here. The format
 follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [2.2.0] — 2026-08-07
+
+Third pass. The structure from 2.0.0 held up, so this is a correctness and
+density pass rather than another redesign: supply-chain pins on the workflows,
+a documented failure mode, and the removal of the last duplicated content.
+
+### Fixed
+
+- **Both unpinned actions are now pinned to release tags.**
+  `jamesgeorge007/github-activity-readme@master` → `@v0.4.5` and
+  `lowlighter/metrics@latest` → `@v3.34`. Both previously resolved to a moving
+  pointer, so an unreviewed upstream change could have run against this
+  repository's `contents: write` token without any commit here. Every `uses:`
+  in the repository is now pinned; all five tags were confirmed to exist.
+- **`Recent Activity` no longer renders as a bare heading.** The section had
+  nothing between its markers, so the live profile showed a heading with empty
+  space under it. A placeholder line now sits there and is overwritten by the
+  workflow's first successful run.
+- **Documented why `activity.yml` and `metrics.yml` may fail.** Both commit to
+  `main`, which is a protected branch; unless `github-actions[bot]` is allowed
+  to bypass the rule, every run fails at the push step. This is a repository
+  setting only the owner can change, so it is recorded in the workflow header
+  and in `CONTRIBUTING.md` rather than worked around in YAML. `snake.yml` is
+  unaffected — it publishes to the unprotected `output` branch.
+
+### Changed
+
+- **Stats and Top Languages now sit side by side**, recovering roughly a screen
+  of scroll. `card_width` dropped 450 → 400: inside the centred `<div>` GitHub
+  renders every card as an inline sibling sharing one wrapping line box, so
+  width alone decides the layout. At 450 the pair totalled 900px against a
+  ~880px content column and always wrapped; at 400 they fit, and still stack on
+  a phone. Verified against the live rendered HTML on both branches — the blank
+  lines between the cards turned out to have no effect either way, and the note
+  in the README says so, so the next edit does not preserve a rule that was
+  never real.
+- **The `📫 Get in Touch` section is no longer a verbatim repeat of the hero
+  link row.** Same four destinations, now a table stating what each channel is
+  actually for. The section and its heading are kept, as previously requested.
+- **Hero tightened** — the six-role positioning is unchanged but rebalanced onto
+  two even lines, and the value proposition is one sentence instead of two.
+- **Closing line replaced.** "Let's collaborate and create something amazing
+  together!" was the one line on the page that read like a template.
+
+### Verified, not changed
+
+Checked this pass and found correct, so recorded here to save the next audit:
+
+- The banner's `<picture>` relative `srcset` paths are rewritten correctly by
+  GitHub's renderer (to `/rahul-rocket/rahul-rocket/raw/main/…`) — confirmed
+  against the live rendered HTML, not assumed.
+- The snake's dark and light SVGs are genuinely different palettes
+  (`--c0:#161b22` vs `#ebedf0`); the `?palette=github-dark` output works.
+- `markdownlint-cli2` reports 0 issues across all 4 linted files.
+- The four third-party widget URLs are served through GitHub's camo proxy, so
+  they cost the reader no direct third-party request. Their upstream
+  availability could not be checked from the build sandbox, whose network policy
+  blocks those hosts.
+
+### Open TODOs
+
+Unchanged from 2.1.0 and still blocked on information only the owner has — the
+product cards, the Cloud/DevOps/AI/Testing skill rows, and the AI/cloud evidence
+bullets in `About`. See the 2.1.0 notes below for what each needs.
+
 ## [2.1.0] — 2026-08-07
 
 Second pass: repositioning, repository scaffolding, and two more workflows.

@@ -7,6 +7,10 @@ name: GitHub Metrics
 # built-in GITHUB_TOKEN cannot read the account-wide data the action aggregates.
 # Until that secret exists every step is skipped and the run passes as a no-op,
 # so an unconfigured profile never shows a red X.
+#
+# It also commits to the default branch, which is protected — see the note in
+# activity.yml for the one repository setting both workflows need before their
+# pushes can land.
 
 on:
   schedule:
@@ -41,9 +45,11 @@ jobs:
             echo "::notice::METRICS_TOKEN is not set — skipping. See the comment at the top of this workflow."
           fi
 
+      # Pinned to a release tag rather than @latest, which is a moving pointer:
+      # a breaking upstream change would otherwise land unannounced.
       - name: Generate metrics
         if: steps.gate.outputs.configured == 'true'
-        uses: lowlighter/metrics@latest
+        uses: lowlighter/metrics@v3.34
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           user: ${{ github.repository_owner }}
