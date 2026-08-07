@@ -274,8 +274,7 @@ local AI tooling where it fits.
 ### The lifecycle
 
 ```text
-Idea → Research → Product requirements → Architecture → Implementation
-     → Code review → Testing → Optimization → Deployment → Monitoring
+Idea → Research → Product requirements → Architecture → Implementation → Code review → Testing → Optimization → Deployment → Monitoring
 ```
 
 AI accelerates every stage. Validation, engineering judgement and the final
