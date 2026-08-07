@@ -1,46 +1,43 @@
-name: Snake Game
+name: Snake Contribution Graph
 
 on:
-  # Schedule the workflow to run daily at midnight UTC
   schedule:
-    - cron: "0 0 * * *" # Runs every day at midnight UTC
-  
-  # Allow manual triggering of the workflow
+    - cron: "0 0 * * *" # Every day at midnight UTC
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/workflows/snake.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: snake
+  cancel-in-progress: true
 
 jobs:
   generate:
-    name: Generate Snake Contribution Graph
+    name: Generate and publish snake animation
     runs-on: ubuntu-latest
     timeout-minutes: 10
 
     steps:
-      # Step 1: Checkout the repository
-      - name: Checkout Repository
-        uses: actions/checkout@v3
-
-      # Step 2: Generate the snake contribution animation
-      - name: Generate Snake Animation
+      # The generated SVGs are read from the `output` branch by README.md via
+      # raw.githubusercontent.com. Only the two SVGs are produced — the GIF
+      # variant was dropped because nothing references it.
+      - name: Generate snake animation
         uses: Platane/snk@v3
+        id: snake
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-            dist/github-contribution-grid-snake.gif
 
-      # Step 3: Upload the generated SVG/GIF as artifacts
-      - name: Upload Snake Graph Artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: snake-graph
-          path: dist
-
-      # Step 4: Push Snake Animation to GitHub Pages
-      - name: Deploy Snake Animation to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Publish to the output branch
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: output # Saves the animation in the `output` branch
-          publish_dir: dist # Ensure correct directory is uploaded
-          commit_message: "🐍 Update snake animation [skip ci]"
+          publish_branch: output
+          publish_dir: dist
+          commit_message: "chore: update snake animation [skip ci]"
