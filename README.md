@@ -223,6 +223,56 @@ phone and honest about what is actually in daily use.
 
 -->
 
+## AI-Native Development Workflow
+
+Modern software engineering is no longer about writing every line of code by
+hand. I use AI across the whole development lifecycle to ship higher-quality
+products faster — as a collaborative engineering partner, not as a replacement
+for engineering judgement.
+
+| Stage | What AI does for me |
+| --- | --- |
+| 💡 **Product discovery** | Turn ideas into technical specifications and PRDs, research competitors and market trends, validate architecture decisions, break large initiatives into milestones |
+| 🏗️ **System design** | Design scalable architectures, define API contracts, model databases, write ADRs, generate sequence and architecture diagrams |
+| 💻 **Development** | React &amp; Next.js applications, TypeScript-first code, Node.js &amp; NestJS APIs, AI-powered features, refactoring and modernisation, test generation, performance work |
+
+### Tooling
+
+I pick the right tool per task rather than relying on a single assistant:
+**Claude Code**, **ChatGPT**, **GitHub Copilot**, **Gemini**, **Cursor** and
+**Windsurf** for the assistant layer; **OpenAI** and **Anthropic** APIs, the
+**Vercel AI SDK** and **Model Context Protocol (MCP)** for what I build with;
+local AI tooling where it fits.
+
+### The lifecycle
+
+```text
+Idea → Research → Product requirements → Architecture → Implementation
+     → Code review → Testing → Optimization → Deployment → Monitoring
+```
+
+AI accelerates every stage. Validation, engineering judgement and the final
+implementation stay mine — AI accelerates development, not decision making.
+
+<!--
+  TODO (Rahul): two blocks from your draft are deliberately not repeated here.
+
+  "Current Focus" (AI applications, LLM integrations, agentic workflows,
+  React 19, Next.js, TypeScript, SaaS, DX, automation, cloud-native) is the
+  Currently Building table near the top of this file, reworded. Two lists of
+  the same thing on one page read as padding; edit that table instead.
+
+  "Engineering Principles" (clean architecture over quick hacks, strong typing
+  and maintainability first, human-reviewed production-ready code) is How I
+  Build below, which already makes the same three points with reasons attached.
+  The one line that was genuinely new — AI accelerates development, not
+  decision making — is kept above.
+
+  The tooling list is also the section most likely to age badly: it is the only
+  place on the page naming specific vendor products. Trim it when a tool leaves
+  your daily rotation.
+-->
+
 ## GitHub Activity
 
 <div align="center">
