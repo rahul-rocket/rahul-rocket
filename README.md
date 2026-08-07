@@ -5,10 +5,16 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner/profile-banner-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/banner/profile-banner-light.svg">
-  <img alt="Web Artisan · Open-Source Enthusiast · Full Stack Developer · Problem Solver — working with Angular, NestJS, Node.js and TypeScript" src="assets/banner/profile-banner-light.svg" width="100%">
+  <img alt="Senior Full Stack Engineer · AI Engineer · SaaS Builder · Cloud Architect — working with TypeScript, Angular, NestJS and Node.js" src="assets/banner/profile-banner-light.svg" width="100%">
 </picture>
 
-Building open-source business platforms at [@ever-co](https://github.com/ever-co) · Ahmedabad, India
+Senior Full Stack Engineer · AI Engineer · Open Source Developer<br>
+SaaS Builder · Developer Tools Enthusiast · Cloud Architect
+
+Core developer at [@ever-co](https://github.com/ever-co) · Ahmedabad, India
+
+I build products end to end — API and data layer through to the interface —
+and ship them as inspectable work: a repository, a demo, or a stated status.
 
 [Website](https://rahul-rocket.github.io) ·
 [LinkedIn](https://www.linkedin.com/in/rahul-rathore-940380108/) ·
@@ -21,31 +27,103 @@ Building open-source business platforms at [@ever-co](https://github.com/ever-co
 
 ## About
 
-I build web applications end to end — from the API and data layer up to the
-interface people actually use. Most of my work sits in the TypeScript
-ecosystem: **Angular** on the front end, **NestJS** and **Node.js** on the back
-end, with **PHP/Laravel** in earlier chapters of my career.
+Most of my work sits in the TypeScript ecosystem: **Angular** on the front end,
+**NestJS** and **Node.js** on the back end, with **PHP/Laravel** in earlier
+chapters of my career. I spend my time on business platforms that have to hold
+up under real use — ERP, CRM and HRM systems — and on the tools that make
+building them faster.
 
-- **Full stack development** — Angular front ends backed by NestJS/Express APIs, REST and GraphQL.
-- **SaaS & business platforms** — core development on ERP/CRM/HRM products at [Ever Co.](https://github.com/ever-co).
-- **Open source** — contributions to Ever Gauzy, Ever Gauzy Teams, and Angular ecosystem libraries.
-- **Developer tools** — reusable NestJS modules, such as a dual TypeORM/MikroORM integration.
-- **Integrations** — third-party APIs and payment gateways.
+- **Full stack engineering** — Angular front ends backed by NestJS/Express
+  APIs, over REST and GraphQL.
+- **SaaS & business platforms** — core development on ERP/CRM/HRM products at
+  [Ever Co.](https://github.com/ever-co)
+- **Open source** — contributions to Ever Gauzy, Ever Gauzy Teams, and Angular
+  ecosystem libraries.
+- **Developer tools** — reusable NestJS modules, such as a dual
+  TypeORM/MikroORM integration.
 
 <!--
-  TODO (Rahul): the modernization brief also asked to highlight AI Engineering,
-  Cloud, and DevOps. Nothing in this account's public repositories or profile
-  evidences those yet, so they have deliberately been left out rather than
-  invented. Add them here (and to the Skills table below) once there is public
-  work to point at.
+  TODO (Rahul): the hero already positions you as an AI Engineer and Cloud
+  Architect. This list is the evidence behind the positioning, so these two
+  bullets are left for you rather than filled with a generic sentence — add
+  them naming the actual product and capability:
+
+  - **AI engineering** — …
+  - **Cloud architecture** — …
 -->
 
 ## Currently
 
-- Building **[rahul-rocket.github.io](https://github.com/rahul-rocket/rahul-rocket.github.io)** — a statically exported Next.js personal site with its own design system, test suite, and accessibility budgets.
-- Core development on **[Ever Gauzy](https://github.com/ever-co/ever-gauzy)**, an open-source ERP/CRM/HRM platform.
+- Building
+  **[rahul-rocket.github.io](https://github.com/rahul-rocket/rahul-rocket.github.io)**
+  — a statically exported Next.js personal site with its own design system,
+  test suite, and accessibility budgets.
+- Core development on **[Ever Gauzy](https://github.com/ever-co/ever-gauzy)**,
+  an open-source ERP/CRM/HRM platform.
 
 ## Featured Projects
+
+<!--
+  ─────────────────────────────────────────────────────────────────────────────
+  TODO (Rahul) — the four product cards below are scaffolds, not descriptions.
+
+  None of CreatorOS, Planix, PDFily or KidzoRides is public: they do not appear
+  under github.com/rahul-rocket, nor anywhere in the rahul-rocket.github.io
+  repository. Rather than invent a positioning for a product I cannot read, each
+  card carries the finished layout with four blanks to fill:
+
+    1. the sentence under the heading — what it does, for whom
+    2. **Stack**  — the technologies actually used
+    3. **Status** — e.g. In production / Private beta / In development / Paused
+    4. **Links**  — replace the placeholder with a repository and/or live URL,
+                    or delete the line if the product has no public surface
+
+  Delete a whole card if a product should not be listed publicly yet.
+
+  The block stays commented out so the live profile never shows half-empty
+  cards. Fill a card in, then move it above this comment to publish it — the
+  products should lead this section, ahead of the two repositories below.
+  ─────────────────────────────────────────────────────────────────────────────
+
+### CreatorOS
+
+TODO (Rahul): one or two sentences — what CreatorOS does and who it is for.
+
+- **Stack** · TODO
+- **Status** · TODO
+- **Links** · TODO — repository and/or live demo
+
+---
+
+### Planix
+
+TODO (Rahul): one or two sentences — what Planix does and who it is for.
+
+- **Stack** · TODO
+- **Status** · TODO
+- **Links** · TODO — repository and/or live demo
+
+---
+
+### PDFily
+
+TODO (Rahul): one or two sentences — what PDFily does and who it is for.
+
+- **Stack** · TODO
+- **Status** · TODO
+- **Links** · TODO — repository and/or live demo
+
+---
+
+### KidzoRides
+
+TODO (Rahul): one or two sentences — what KidzoRides does and who it is for.
+
+- **Stack** · TODO
+- **Status** · TODO
+- **Links** · TODO — repository and/or live demo
+
+-->
 
 ### [rahul-rocket.github.io](https://github.com/rahul-rocket/rahul-rocket.github.io)
 
@@ -55,8 +133,10 @@ unit and end-to-end tests, and axe accessibility checks on every route in both
 themes.
 
 - **Stack** · TypeScript, Next.js
-- **Live** · <https://rahul-rocket.github.io>
 - **Status** · Active — built, gated on content review before it is indexed
+- **Links** ·
+  [Repository](https://github.com/rahul-rocket/rahul-rocket.github.io) ·
+  [Live](https://rahul-rocket.github.io)
 
 ---
 
@@ -68,8 +148,7 @@ for injecting repositories.
 
 - **Stack** · TypeScript, NestJS, TypeORM, MikroORM
 - **Status** · Paused — last updated April 2024
-
----
+- **Links** · [Repository](https://github.com/rahul-rocket/nestjs-multi-orm)
 
 <!--
   TODO (Rahul): https://github.com/rahul-rocket/gpt-chatbot has no description
@@ -88,6 +167,9 @@ for injecting repositories.
 
 ## Skills
 
+Grouped by role rather than listed as badges, so the table stays readable on a
+phone and honest about what is actually in daily use.
+
 | Category | Technologies |
 | --- | --- |
 | **Languages** | TypeScript, JavaScript, PHP |
@@ -95,11 +177,19 @@ for injecting repositories.
 | **Backend** | NestJS, Node.js, Express, RxJS, Laravel, Lumen, CodeIgniter |
 | **Databases** | PostgreSQL, MySQL, MongoDB, SQLite |
 | **APIs** | REST, GraphQL, third-party & payment gateway integrations |
-| **Tooling** | Git, GitHub, GitLab, GitHub Actions |
+| **Tools** | Git, GitHub, GitLab, GitHub Actions |
 
 <!--
-  TODO (Rahul): add Cloud, DevOps, AI and Testing rows here when applicable.
-  They were intentionally omitted rather than guessed.
+  TODO (Rahul): the Cloud, DevOps, AI and Testing rows you asked for are drafted
+  below with candidate technologies. They are commented out so the table never
+  renders empty cells. Trim each list to what you actually use, then paste the
+  rows into the table above (before the Tools row) and delete this comment.
+
+| **Cloud** | AWS / GCP / Azure / DigitalOcean / Vercel / Cloudflare |
+| **DevOps** | Docker, Kubernetes, Terraform, Nginx, CI/CD pipelines |
+| **AI** | OpenAI & Anthropic APIs, LangChain, embeddings, vector databases |
+| **Testing** | Jest, Vitest, Playwright, Cypress, supertest |
+
 -->
 
 ## GitHub
@@ -142,6 +232,16 @@ for injecting repositories.
 -->
 
 </div>
+
+## Recent Activity
+
+<!--
+  Written by .github/workflows/activity.yml. Do not edit between the markers —
+  the next run overwrites everything there. The list stays empty until the
+  workflow's first run.
+-->
+<!--START_SECTION:activity-->
+<!--END_SECTION:activity-->
 
 ---
 
