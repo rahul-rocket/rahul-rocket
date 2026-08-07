@@ -51,6 +51,15 @@ follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
+- **The `Engineering Toolkit` table's `Category` column is wider.** The labels
+  now use non-breaking spaces, so none of them wrap. GitHub sizes table columns
+  from their content and has no width syntax, so preventing the wrap is the only
+  lever available: previously `Monitoring & Analytics` and `UI & Design Systems`
+  broke onto two lines at laptop widths and the column collapsed to roughly half
+  its current width, leaving the table visibly lopsided against the long
+  `Technologies` column. A comment above the table records that the entities are
+  deliberate, and that new category labels should stay near or below the length
+  of the longest current one.
 - **`CONTRIBUTING.md`** now describes four workflows rather than five, and drops
   the paragraph on the gists script and the note about hand-editing inside the
   `gists` markers. It points at the archive for what restoring the workflow

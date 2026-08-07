@@ -198,20 +198,32 @@ decorators for injecting repositories.
 Organized by domain to highlight the technologies I use most in modern
 AI-powered product development.
 
+<!--
+  The &nbsp; inside the Category cells are load-bearing — do not "clean" them
+  back to spaces. GitHub sizes table columns from their content and offers no
+  width syntax, so the only way to widen a column is to stop its cells from
+  wrapping. Without them, "Monitoring & Analytics" and "UI & Design Systems"
+  break onto two lines on a laptop viewport and the column collapses to about
+  half this width, which is what made the table look lopsided.
+
+  Adding a category whose label is longer than "Monitoring & Analytics" widens
+  the column further and squeezes Technologies, so keep labels around that
+  length or shorter.
+-->
 | Category | Technologies |
 | --- | --- |
-| 🤖 **AI &amp; LLMs** | Claude Code, ChatGPT, GitHub Copilot, OpenAI API, Anthropic API, Google Gemini, Vercel AI SDK, Model Context Protocol (MCP), LangChain |
-| ⚛️ **Frontend** | React, Next.js, TypeScript, Tailwind CSS, shadcn/ui, React Query, TanStack Table, Angular, Angular Material, HTML5, CSS3 |
-| ⚙️ **Backend** | Node.js, NestJS, Express.js, PHP, Laravel, Lumen, CodeIgniter, REST APIs, GraphQL, WebSockets |
-| 🗄️ **Databases** | PostgreSQL, Supabase, MySQL, MongoDB, SQLite |
-| 🧩 **ORM &amp; Data** | Prisma ORM, Drizzle ORM, Supabase Client, TypeORM |
-| ☁️ **Cloud &amp; BaaS** | Vercel, Supabase, Firebase, Cloudflare, AWS, DigitalOcean |
-| 🚀 **DevOps &amp; CI/CD** | Docker, GitHub Actions, GitLab CI/CD, Vercel Deployments, Cloudflare Pages, Linux |
-| 🔌 **APIs &amp; Integrations** | Stripe, Razorpay, Firebase Services, Authentication, OAuth, Payment Gateways, Third-party APIs |
-| 🛠️ **Developer Tools** | Git, GitHub, GitLab, pnpm, Turborepo, Nx, ESLint, Prettier, Postman, VS Code |
-| 🧪 **Testing &amp; Quality** | Vitest, Jest, Playwright, Cypress, Testing Library |
-| 📊 **Monitoring &amp; Analytics** | PostHog, Google Analytics, Google Tag Manager, Sentry |
-| 🎨 **UI &amp; Design Systems** | Tailwind CSS, shadcn/ui, Radix UI, Material UI, Framer Motion |
+| 🤖&nbsp;**AI&nbsp;&amp;&nbsp;LLMs** | Claude Code, ChatGPT, GitHub Copilot, OpenAI API, Anthropic API, Google Gemini, Vercel AI SDK, Model Context Protocol (MCP), LangChain |
+| ⚛️&nbsp;**Frontend** | React, Next.js, TypeScript, Tailwind CSS, shadcn/ui, React Query, TanStack Table, Angular, Angular Material, HTML5, CSS3 |
+| ⚙️&nbsp;**Backend** | Node.js, NestJS, Express.js, PHP, Laravel, Lumen, CodeIgniter, REST APIs, GraphQL, WebSockets |
+| 🗄️&nbsp;**Databases** | PostgreSQL, Supabase, MySQL, MongoDB, SQLite |
+| 🧩&nbsp;**ORM&nbsp;&amp;&nbsp;Data** | Prisma ORM, Drizzle ORM, Supabase Client, TypeORM |
+| ☁️&nbsp;**Cloud&nbsp;&amp;&nbsp;BaaS** | Vercel, Supabase, Firebase, Cloudflare, AWS, DigitalOcean |
+| 🚀&nbsp;**DevOps&nbsp;&amp;&nbsp;CI/CD** | Docker, GitHub Actions, GitLab CI/CD, Vercel Deployments, Cloudflare Pages, Linux |
+| 🔌&nbsp;**APIs&nbsp;&amp;&nbsp;Integrations** | Stripe, Razorpay, Firebase Services, Authentication, OAuth, Payment Gateways, Third-party APIs |
+| 🛠️&nbsp;**Developer&nbsp;Tools** | Git, GitHub, GitLab, pnpm, Turborepo, Nx, ESLint, Prettier, Postman, VS Code |
+| 🧪&nbsp;**Testing&nbsp;&amp;&nbsp;Quality** | Vitest, Jest, Playwright, Cypress, Testing Library |
+| 📊&nbsp;**Monitoring&nbsp;&amp;&nbsp;Analytics** | PostHog, Google Analytics, Google Tag Manager, Sentry |
+| 🎨&nbsp;**UI&nbsp;&amp;&nbsp;Design&nbsp;Systems** | Tailwind CSS, shadcn/ui, Radix UI, Material UI, Framer Motion |
 
 ## AI-Native Development Workflow
 
