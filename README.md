@@ -64,6 +64,15 @@ real use — ERP, CRM and HRM — and on the tools that make building them faste
   that names the platform and what you run on it.
 -->
 
+<!--
+  ═══════════════════════════════════════════════════════════════════════════
+  HIDDEN AT RAHUL'S REQUEST — to be corrected, then republished.
+
+  Nothing between the markers renders on the live profile. To bring the
+  section back, delete this opening comment line and the closing one below,
+  then edit the content in place.
+  ═══════════════════════════════════════════════════════════════════════════
+
 ## Current Focus
 
 - Building
@@ -75,9 +84,26 @@ real use — ERP, CRM and HRM — and on the tools that make building them faste
 - Moving product work toward **LLM-backed applications** — the positioning in
   the hero, still ahead of its public record.
 
-## Featured Projects
+  END of the hidden Current Focus section.
+-->
 
 <!--
+  ═══════════════════════════════════════════════════════════════════════════
+  HIDDEN AT RAHUL'S REQUEST — to be corrected, then republished.
+
+  Everything from here to the end marker is one HTML comment, so none of it
+  renders. That includes the two verified cards near the bottom
+  (rahul-rocket.github.io and nestjs-multi-orm), which were accurate and are
+  hidden only because they live inside this section.
+
+  To republish: delete this opening comment line and the closing one at the
+  very end of the section. Do NOT put another HTML comment inside this block —
+  comments do not nest, so the first inner closing delimiter would end the
+  block early and leak the rest of the section onto the live profile.
+  ═══════════════════════════════════════════════════════════════════════════
+
+## Featured Projects
+
   ─────────────────────────────────────────────────────────────────────────────
   TODO (Rahul) — the four product cards below are scaffolds, not descriptions.
 
@@ -143,7 +169,11 @@ TODO (Rahul): one or two sentences — what KidzoRides does and who it is for.
 - **Status** · TODO
 - **Links** · TODO — repository and/or live demo
 
--->
+  ─────────────────────────────────────────────────────────────────────────────
+  The two cards below are verified and accurate. They are the quickest thing
+  to republish if you want a project showcase back on the profile before the
+  four products above are ready.
+  ─────────────────────────────────────────────────────────────────────────────
 
 ### [rahul-rocket.github.io](https://github.com/rahul-rocket/rahul-rocket.github.io)
 
@@ -170,12 +200,13 @@ for injecting repositories.
 - **Status** · Paused — last updated April 2024
 - **Links** · [Repository](https://github.com/rahul-rocket/nestjs-multi-orm)
 
-<!--
   TODO (Rahul): https://github.com/rahul-rocket/gpt-chatbot has no description
   and its README is a single heading, so there is nothing factual to write a
   card from. It is also the only repository whose name suggests AI work, which
   makes it the cheapest way to close the gap flagged in About Me — give it a
   README and a description, then add a card here.
+
+  END of the hidden Featured Projects section.
 -->
 
 ## Tech Stack
@@ -321,7 +352,7 @@ each one is actually for, so the two are not simply a repeat of one another.
 
 <div align="center">
 
-Every project above links to its source. Read the code first — then get in
-touch if it raises a question worth answering.
+My repositories are open — read the code first, then get in touch if it raises
+a question worth answering.
 
 </div>
