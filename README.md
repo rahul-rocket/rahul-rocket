@@ -8,13 +8,13 @@
   <img alt="Senior Full Stack Engineer · AI Engineer · SaaS Builder · Cloud Architect — working with TypeScript, Angular, NestJS and Node.js" src="assets/banner/profile-banner-light.svg" width="100%">
 </picture>
 
-Senior Full Stack Engineer · AI Engineer · Open Source Developer<br>
-SaaS Builder · Developer Tools Enthusiast · Cloud Architect
+Senior Full Stack Engineer · AI Engineer · Cloud Architect<br>
+Open Source Developer · SaaS Builder · Developer Tools Enthusiast
 
 Core developer at [@ever-co](https://github.com/ever-co) · Ahmedabad, India
 
-I build products end to end — API and data layer through to the interface —
-and ship them as inspectable work: a repository, a demo, or a stated status.
+I build business platforms end to end and ship them as inspectable work — a
+repository, a demo, or a stated status.
 
 [Website](https://rahul-rocket.github.io) ·
 [LinkedIn](https://www.linkedin.com/in/rahul-rathore-940380108/) ·
@@ -196,14 +196,19 @@ phone and honest about what is actually in daily use.
 
 <div align="center">
 
+<!--
+  The stats and top-languages cards sit in a single paragraph with no blank
+  line between them, so they render as inline images: side by side on a desktop
+  README (2 × 400px fits the ~880px content column) and stacked on a phone.
+  A blank line here would make them separate paragraphs and force the stack.
+-->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=rahul-rocket&show_icons=true&hide_border=true&theme=github_dark&card_width=450">
-  <img alt="Rahul's GitHub statistics: total stars, commits, pull requests, issues and contribution count" src="https://github-readme-stats.vercel.app/api?username=rahul-rocket&show_icons=true&hide_border=true&theme=default&card_width=450">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=rahul-rocket&show_icons=true&hide_border=true&theme=github_dark&card_width=400">
+  <img alt="Rahul's GitHub statistics: total stars, commits, pull requests, issues and contribution count" src="https://github-readme-stats.vercel.app/api?username=rahul-rocket&show_icons=true&hide_border=true&theme=default&card_width=400">
 </picture>
-
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=rahul-rocket&layout=compact&hide_border=true&theme=github_dark&card_width=450">
-  <img alt="Most used programming languages across Rahul's repositories" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rahul-rocket&layout=compact&hide_border=true&theme=default&card_width=450">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=rahul-rocket&layout=compact&hide_border=true&theme=github_dark&card_width=400">
+  <img alt="Most used programming languages across Rahul's repositories" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rahul-rocket&layout=compact&hide_border=true&theme=default&card_width=400">
 </picture>
 
 <picture>
@@ -237,20 +242,28 @@ phone and honest about what is actually in daily use.
 
 <!--
   Written by .github/workflows/activity.yml. Do not edit between the markers —
-  the next run overwrites everything there. The list stays empty until the
-  workflow's first run.
+  the next run overwrites everything there, including the placeholder below.
+  The placeholder exists so this section never renders as a bare heading with
+  nothing under it while waiting for the workflow's first run.
 -->
 <!--START_SECTION:activity-->
+1. Waiting on the first run of the [Recent Activity workflow](.github/workflows/activity.yml) — it publishes the five most recent public events here, daily.
 <!--END_SECTION:activity-->
 
 ---
 
 ## 📫 Get in Touch
 
-- **Website** — <https://rahul-rocket.github.io>
-- **LinkedIn** — [rahul-rathore-940380108](https://www.linkedin.com/in/rahul-rathore-940380108/)
-- **GitHub** — [@rahul-rocket](https://github.com/rahul-rocket)
-- **Upwork** — [Hire me](https://www.upwork.com/freelancers/~01192228420671270c)
+The hero above carries the same four links as a compact row; this section says
+what each one is actually for, so the two are not simply a repeat of one
+another.
+
+| Channel | Best for |
+| --- | --- |
+| [Website](https://rahul-rocket.github.io) | Longer-form background and the professional record |
+| [LinkedIn](https://www.linkedin.com/in/rahul-rathore-940380108/) | Roles, introductions, and anything hiring-related |
+| [GitHub](https://github.com/rahul-rocket) | Issues, pull requests, and questions about the code |
+| [Upwork](https://www.upwork.com/freelancers/~01192228420671270c) | Contract and freelance engagements |
 
 <!--
   Preserved from the previous README — uncomment any of these to publish them again.
@@ -261,5 +274,5 @@ phone and honest about what is actually in daily use.
   - **Freelancer** — [rahulrathore576](https://www.freelancer.in/u/rahulrathore576)
 -->
 
-Feel free to explore my repositories and connect with me. Let's collaborate and
-create something amazing together!
+Every project above links to its source. Read the code first — then get in
+touch if it raises a question worth answering.
