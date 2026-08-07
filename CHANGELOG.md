@@ -3,6 +3,57 @@
 All notable changes to this profile repository are recorded here. The format
 follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [2.1.0] — 2026-08-07
+
+Second pass: repositioning, repository scaffolding, and two more workflows.
+
+### Added
+
+- **Positioning in the hero** — Senior Full Stack Engineer, AI Engineer, Open
+  Source Developer, SaaS Builder, Developer Tools Enthusiast, Cloud Architect —
+  plus a one-line value proposition and the current role.
+- **`LICENSE`** (MIT). <!-- TODO (Rahul): the copyright line reads "Rahul Rocket"; swap in your legal name if you would rather it be enforceable under that. -->
+- **`CONTRIBUTING.md`** — what is worth an issue or PR on a profile repository,
+  how to lint locally, and the archive-before-delete rule.
+- **`.markdownlint-cli2.jsonc`** and a **`Lint` workflow** running
+  `markdownlint-cli2` on every push and pull request. The repository now lints
+  clean.
+- **`Recent Activity` workflow** (`activity.yml`) writing the five most recent
+  public events into the README between marker comments.
+- **Four product cards** for CreatorOS, Planix, PDFily and KidzoRides — see
+  *Open TODOs* below.
+- **Cloud, DevOps, AI and Testing skill rows**, drafted with candidate
+  technologies — see *Open TODOs* below.
+
+### Changed
+
+- Hero banner rewritten to carry the new positioning. Both SVG variants were
+  regenerated; the previous wording is in git history and noted in
+  `archive/notes.md`.
+- `About` reframed around business platforms rather than a generic full-stack
+  summary.
+- Project cards gained a consistent **Stack / Status / Links** triple, so every
+  card exposes the same fields.
+- Prose rewrapped at 80 columns. `MD013` is deliberately off in the lint config:
+  a widget's `<source srcset="…">` is one unbreakable URL well past 80 columns,
+  so enforcing it would mean an inline disable comment on nearly every image.
+
+### Open TODOs
+
+Two additions are committed **inside HTML comments** so the live profile never
+renders half-empty cards or blank table cells. Each is a complete block that
+becomes visible the moment it is filled in and uncommented:
+
+- **CreatorOS, Planix, PDFily, KidzoRides** — none is public. They do not appear
+  under `github.com/rahul-rocket` (all 18 repositories were enumerated), nor
+  anywhere in the `rahul-rocket.github.io` repository. Each card has the layout
+  in place and four blanks: description, stack, status, links.
+- **Cloud / DevOps / AI / Testing skills** — drafted with candidate
+  technologies to trim rather than a guess at what is actually in use.
+- **AI engineering and cloud architecture bullets** in `About` — the hero states
+  the positioning; these two bullets are the evidence behind it and need the
+  real product and capability named.
+
 ## [2.0.0] — 2026-08-07
 
 Full redesign of the profile README, plus a rebuild of the automation behind it.

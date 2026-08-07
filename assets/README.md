@@ -3,7 +3,7 @@
 Static assets for the profile README. Everything here is committed to the
 repository so the README does not depend on an external image host.
 
-```
+```text
 assets/
 ├── banner/    Hero banner, one SVG per colour scheme
 ├── icons/     Small inline icons (currently empty)
