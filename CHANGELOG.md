@@ -46,6 +46,13 @@ restored with real content instead of scaffolding.
 - **A `How I Build` section**: a short statement of approach plus three
   principles (ship inspectable work, type the boundaries, budget for the
   reader).
+- **Archive snapshot `archive/2026-08-07-v3.0.0/`**, holding the v3.0.0 README
+  and both v3.0.0 banner SVGs byte-identical to what was live, so this rebuild
+  can be reverted without reading git history. The banners are included because
+  the rebuild overwrote them in place — restoring the README alone would leave
+  a banner that no longer matches its text. Snapshot naming gained a version
+  suffix, since this is the second snapshot taken on 2026-08-07 and dates alone
+  collide.
 
 ### Not added
 
