@@ -3,6 +3,64 @@
 All notable changes to this profile repository are recorded here. The format
 follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [3.0.0] — 2026-08-07
+
+Fourth pass, and a repositioning rather than a tidy-up. The previous three
+passes made the profile readable; this one makes it say something specific.
+The profile now leads with **AI applications, React &amp; Next.js SaaS, and
+developer tools** instead of a general full-stack summary, and the section
+order was rebuilt so a reader meets the positioning, the proof, and the stack
+in that order.
+
+### Changed
+
+- **New hero and banner.** Both banner SVGs were redrawn around the name and a
+  single positioning line, with the technology strip changed from
+  `TYPESCRIPT · ANGULAR · NESTJS · NODE.JS` to
+  `TYPESCRIPT · REACT · NEXT.JS · NODE.JS · NESTJS · AI`. The README hero
+  carries the same claim in text, plus a one-line focus row.
+- **Sections reordered** to Banner → Hero → About Me → Current Focus →
+  Featured Projects → Tech Stack → GitHub Metrics → Open Source Contributions →
+  Latest Gists → Get in Touch → Footer. Tech Stack moved above the widgets and
+  Open Source Contributions below them, so the page reads claim → evidence →
+  activity instead of interleaving them.
+- **`Skills` renamed to `Tech Stack`**, with React and Next.js promoted to the
+  front of the Frontend row. `Currently` renamed to `Current Focus`.
+- **`Recent Activity` is now a subsection of Open Source Contributions**
+  rather than a peer heading, which is what it actually describes.
+- **`Get in Touch` gained Email and X rows**, both restored from handles that
+  the pre-redesign README carried commented out, plus a location/timezone row.
+  Each row is prefixed with the channel's icon.
+
+### Added
+
+- **A `Latest Gists` section**, written between markers by a new `gists.yml`
+  workflow. It runs `.github/scripts/update_gists.py` — a standard-library
+  script against the public gists API — rather than a third-party action,
+  because none exists for gists and the script keeps the job off the supply
+  chain. The script is idempotent, so a quiet day produces no commit, and it
+  renders "No public gists yet." rather than an empty section.
+
+### Removed
+
+- **The streak-stats card.** Current streak, longest streak and total
+  contributions restate the same contribution history that the stats card and
+  the two graphs already show. It was the widget most likely to read as padding
+  rather than evidence, and it was the one card the redesign brief did not ask
+  to keep.
+- **"Cloud Architect" from the hero.** It was asserted with nothing public
+  behind it. The same applies to the AI positioning, which is kept because it
+  is the stated direction — but the README now says so in the open rather than
+  implying a track record, and carries a TODO naming the missing artifact.
+
+### Notes
+
+Four product cards — CreatorOS, Planix, PDFily and KidzoRides — remain
+commented-out scaffolds. None of them is public, so there is nothing factual to
+write from; the layout is finished and waiting on four blanks each. The
+Featured Projects comment now also shows where a screenshot goes, since the
+brief asked for screenshots over bare links.
+
 ## [2.2.0] — 2026-08-07
 
 Third pass. The structure from 2.0.0 held up, so this is a correctness and
