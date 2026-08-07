@@ -46,7 +46,11 @@ under [`archive/2026-08-07/`](archive/2026-08-07/), with per-item reasoning in
   clashed with light-mode GitHub.
 - Contact links converted from `img.shields.io` badges to text links: same
   information, four fewer image requests, and readable without relying on badge
-  alt text.
+  alt text. The `📫 Get in Touch` section keeps its heading, its closing
+  invitation, and the five commented-out destinations, and is now mirrored by a
+  compact link row in the hero.
+- `🐍 Contribution Snake Graph` keeps its own heading, now nested as an `h3`
+  under `GitHub` alongside the other cards.
 - Skills regrouped from a flat emoji-prefixed bullet list into a labelled table
   (Languages, Frontend, Backend, Databases, APIs, Tooling).
 - Open-source contributions moved into a table that names the role held on each

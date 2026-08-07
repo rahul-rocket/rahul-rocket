@@ -15,15 +15,6 @@ Building open-source business platforms at [@ever-co](https://github.com/ever-co
 [GitHub](https://github.com/rahul-rocket) ·
 [Upwork](https://www.upwork.com/freelancers/~01192228420671270c)
 
-<!--
-  Preserved from the previous README — uncomment any of these to publish them again.
-  [GitLab](https://gitlab.com/rahulrathore576)
-  [Stack Overflow](https://stackoverflow.com/users/11013906/rahul-rathore)
-  [Email](mailto:rahulrathore576@gmail.com)
-  [Twitter](https://twitter.com/rahulrathore576)
-  [Freelancer](https://www.freelancer.in/u/rahulrathore576)
--->
-
 </div>
 
 ---
@@ -135,6 +126,8 @@ for injecting repositories.
   <img alt="Graph of Rahul's contribution activity over the past year" src="https://github-readme-activity-graph.vercel.app/graph?username=rahul-rocket&hide_border=true&theme=github-light">
 </picture>
 
+### 🐍 Contribution Snake Graph
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/rahul-rocket/rahul-rocket/output/github-contribution-grid-snake-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/rahul-rocket/rahul-rocket/output/github-contribution-grid-snake.svg">
@@ -152,8 +145,21 @@ for injecting repositories.
 
 ---
 
-<div align="center">
+## 📫 Get in Touch
 
-Open to collaboration on open-source and full-stack product work.
+- **Website** — <https://rahul-rocket.github.io>
+- **LinkedIn** — [rahul-rathore-940380108](https://www.linkedin.com/in/rahul-rathore-940380108/)
+- **GitHub** — [@rahul-rocket](https://github.com/rahul-rocket)
+- **Upwork** — [Hire me](https://www.upwork.com/freelancers/~01192228420671270c)
 
-</div>
+<!--
+  Preserved from the previous README — uncomment any of these to publish them again.
+  - **GitLab** — [rahulrathore576](https://gitlab.com/rahulrathore576)
+  - **Stack Overflow** — [rahul-rathore](https://stackoverflow.com/users/11013906/rahul-rathore)
+  - **Email** — <mailto:rahulrathore576@gmail.com>
+  - **Twitter** — [@rahulrathore576](https://twitter.com/rahulrathore576)
+  - **Freelancer** — [rahulrathore576](https://www.freelancer.in/u/rahulrathore576)
+-->
+
+Feel free to explore my repositories and connect with me. Let's collaborate and
+create something amazing together!
