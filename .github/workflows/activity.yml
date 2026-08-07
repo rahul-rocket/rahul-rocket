@@ -1,9 +1,19 @@
 name: Recent Activity
 
-# Rewrites the list between the <!--START_SECTION:activity--> and
-# <!--END_SECTION:activity--> markers in README.md with the most recent public
-# GitHub events for this account. If those markers are removed from the README
-# the action fails, so keep them in place.
+# Rewrites the list between the START_SECTION:activity and END_SECTION:activity
+# marker comments in README.md with the most recent public GitHub events for
+# this account. If those markers are removed from the README the action fails,
+# so keep them in place.
+#
+# DISABLED — the Recent Activity subsection was hidden from the README at
+# Rahul's request, which removed both markers. This job would therefore fail on
+# every run, so the daily `schedule:` trigger is commented out below rather than
+# left to produce a red cross each morning. `workflow_dispatch` stays available
+# for a manual run once the section is back.
+#
+# To re-enable: restore the Recent Activity subsection to README.md (git history
+# has it verbatim — see the comment where it used to sit, above Technical
+# Expertise), then uncomment the `schedule:` block.
 #
 # NOTE: this job commits to `main`, which is a protected branch. For the push to
 # succeed, GitHub Actions must be allowed to bypass that protection — Settings →
@@ -12,8 +22,9 @@ name: Recent Activity
 # push step with a "protected branch" error. The same applies to metrics.yml.
 
 on:
-  schedule:
-    - cron: "0 1 * * *" # Every day at 01:00 UTC, after snake and metrics
+  # Re-enable together with the README subsection — see the note above.
+  # schedule:
+  #   - cron: "0 1 * * *" # Every day at 01:00 UTC, after snake and metrics
   workflow_dispatch:
 
 permissions:

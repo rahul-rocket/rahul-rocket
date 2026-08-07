@@ -3,6 +3,40 @@
 All notable changes to this profile repository are recorded here. The format
 follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [4.1.0] — 2026-08-07
+
+Follow-up to 4.0.0, narrowing what the profile shows while the products behind
+it are still private.
+
+### Hidden
+
+- **The `CreatorOS` and `Planix` cards**, wrapped in a single HTML comment
+  inside `Featured Projects`. The rest of the section renders: PDFily,
+  KidzoRides, and the two verified repository cards.
+
+  Consequence worth recording: CreatorOS was the card carrying the AI
+  positioning that the banner and `Currently Building` both lead with. With it
+  hidden, PDFily is the only card on the page that mentions AI at all, and it
+  is not public either. The `Currently Building` TODO records this.
+
+- **`Recent Activity`**, the subsection of `Open Source` written daily by
+  `activity.yml`, to be added back later. This one was **removed rather than
+  commented out**: its content sat between two marker comments, and since HTML
+  comments do not nest, an outer wrapper would have closed at the first
+  marker’s delimiter and leaked the rest onto the live profile. A comment in
+  its place records where it belonged and how to restore it, pinned to commit
+  `4471f5b`, which is on `main` and holds the markers verbatim.
+
+### Changed
+
+- **`activity.yml` schedule disabled.** The action fails by design when the
+  README markers are absent, so with the section hidden its daily run would
+  have failed every morning. The `schedule:` trigger is commented out and
+  `workflow_dispatch` kept, so nothing runs and nothing fails while the section
+  is away. The section and the schedule must be restored together — the
+  section without the workflow is a heading that never updates, and the
+  workflow without the section is a daily red cross.
+
 ## [4.0.0] — 2026-08-07
 
 Fifth pass, and the one that turns the page from a well-formatted README into
