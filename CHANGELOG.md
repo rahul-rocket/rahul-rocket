@@ -61,6 +61,47 @@ write from; the layout is finished and waiting on four blanks each. The
 Featured Projects comment now also shows where a screenshot goes, since the
 brief asked for screenshots over bare links.
 
+## [2.3.0] — 2026-08-07
+
+### Fixed
+
+- **The two GitHub statistics cards were rendering broken and are replaced.**
+  `github-readme-stats.vercel.app` had stopped serving: GitHub's camo proxy
+  returned `502 Error Fetching Resource` for that host on every attempt across
+  repeated checks, including with all query parameters stripped, so the failure
+  was the host itself rather than the URLs. The public instance of that project
+  shares a single free-tier quota across every profile that embeds it, which
+  makes this a recurring failure mode, not a one-off outage.
+
+  Replaced with `github-profile-summary-cards`: `profile-details` for the
+  headline numbers, and `repos-per-language` plus `most-commit-language` in
+  place of the single top-languages card. Each replacement was verified to
+  resolve **through camo** before being committed — a URL that loads in a
+  browser can still 502 for GitHub, so browser-level checking is not
+  sufficient.
+
+  The activity graph and the snake were checked at the same time and were
+  serving normally throughout; they are unchanged.
+
+### Changed
+
+- Card themes are now `github_dark` / `github`, confirmed to be a genuine
+  dark/light pair (`#0d1117` vs `#ffffff` backgrounds). `light` is not a real
+  theme name for this service — it silently falls back to `default` — so it is
+  not used.
+- Layout note rewritten for the new intrinsic sizes: `profile-details` is 700px
+  and takes its own row, the two language cards are 340px each and pair inside
+  the ~880px content column.
+
+### Notes
+
+The section is still built from render-time third-party services, and one has
+now failed once. The durable fix is the `lowlighter/metrics` panel already wired
+up in `metrics.yml`: a workflow that generates an SVG and commits it has no
+render-time dependency and cannot break this way. The snake graph already works
+like that, which is why it kept rendering while the stats cards did not. This is
+recorded in the README next to the metrics TODO.
+
 ## [2.2.0] — 2026-08-07
 
 Third pass. The structure from 2.0.0 held up, so this is a correctness and

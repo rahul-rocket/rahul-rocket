@@ -243,21 +243,38 @@ phone and honest about what is actually in daily use.
 <div align="center">
 
 <!--
-  Inside this raw <div>, GitHub renders each <picture> as an inline sibling
-  rather than wrapping it in a paragraph, so all four cards below share one
-  wrapping line box. Layout is therefore decided by width alone, not by the
-  blank lines between them: 2 × 400px fits the ~880px README content column, so
-  stats and top-languages pair up on desktop and wrap to a stack on a phone.
-  At the previous 450px they totalled 900px and always wrapped. Keep the pair
-  at 400 or below.
+  Cards come from github-profile-summary-cards. The previous stats and
+  top-languages cards used github-readme-stats.vercel.app, which was replaced
+  because it had stopped serving: GitHub's camo proxy returned 502 "Error
+  Fetching Resource" for that host on every attempt, including with all query
+  parameters removed, so both cards rendered broken on the live profile. The
+  public instance of that project shares one free-tier quota across every
+  profile using it, so this is a recurring failure rather than a one-off.
+
+  Before swapping any card here, check the replacement actually resolves
+  through camo — a URL that loads in a browser can still 502 for GitHub.
+
+  Layout: inside this raw <div> each <picture> is an inline sibling, so widths
+  decide the arrangement. profile-details is 700px and takes its own row; the
+  language cards are 340px each and pair at 680px inside the ~880px content
+  column. Keep any paired cards at or under 440px each.
+
+  Themes: `github_dark` and `github` are a genuine light/dark pair (#0d1117 vs
+  #ffffff backgrounds — verified, not assumed). `light` is not a real theme
+  name here; it silently falls back to `default`.
 -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=rahul-rocket&show_icons=true&hide_border=true&theme=github_dark&card_width=400">
-  <img alt="Rahul's GitHub statistics: total stars, commits, pull requests, issues and contribution count" src="https://github-readme-stats.vercel.app/api?username=rahul-rocket&show_icons=true&hide_border=true&theme=default&card_width=400">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=rahul-rocket&theme=github_dark">
+  <img alt="Rahul's GitHub profile summary: total stars, commits, pull requests, issues and contributions" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=rahul-rocket&theme=github">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=rahul-rocket&theme=github_dark">
+  <img alt="Number of Rahul's repositories per programming language" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=rahul-rocket&theme=github">
 </picture>
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=rahul-rocket&layout=compact&hide_border=true&theme=github_dark&card_width=400">
-  <img alt="Most used programming languages across Rahul's repositories" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rahul-rocket&layout=compact&hide_border=true&theme=default&card_width=400">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=rahul-rocket&theme=github_dark">
+  <img alt="Languages Rahul commits to most often, by share of commits" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=rahul-rocket&theme=github">
 </picture>
 
 <picture>
@@ -282,6 +299,13 @@ phone and honest about what is actually in daily use.
   .github/workflows/metrics.yml but stays skipped until you add a METRICS_TOKEN
   secret. Once it runs and commits assets/metrics/metrics.svg, add it here:
   <img alt="GitHub metrics overview for rahul-rocket" src="assets/metrics/metrics.svg">
+
+  That panel is also the durable answer to this section breaking. Every card
+  above is rendered on demand by a free-tier service, and one of them has
+  already gone down once — github-readme-stats, replaced above. A workflow that
+  generates an SVG and commits it into this repository has no render-time
+  dependency at all and cannot break this way. The snake graph already works
+  exactly like that, which is why it kept working while the stats cards did not.
 -->
 
 </div>
