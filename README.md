@@ -197,31 +197,23 @@ decorators for injecting repositories.
 
 ## Technical Expertise
 
-Grouped by role rather than listed as badges, so the table stays readable on a
-phone and honest about what is actually in daily use.
+Organized by domain to highlight the technologies I use most in modern
+AI-powered product development.
 
 | Category | Technologies |
 | --- | --- |
-| **Languages** | TypeScript, JavaScript, PHP |
-| **Frontend** | React, Next.js, Angular, Angular Material, HTML, CSS, Bootstrap |
-| **Backend** | NestJS, Node.js, Express, RxJS, Laravel, Lumen, CodeIgniter |
-| **Databases** | PostgreSQL, MySQL, MongoDB, SQLite |
-| **APIs** | REST, GraphQL, third-party &amp; payment gateway integrations |
-| **Tools** | Git, GitHub, GitLab, GitHub Actions |
-
-<!--
-  TODO (Rahul): the AI row matters most — the banner and Currently Building
-  both lead with AI while this table does not mention it at all, which is the
-  first thing a technical reader will notice. Trim the drafts below to what you
-  genuinely use, then paste them in. The AI row belongs directly under the
-  header, above Languages.
-
-| **AI** | OpenAI / Anthropic APIs, MCP, Vercel AI SDK, LangChain, embeddings, vector databases |
-| **Cloud** | AWS / GCP / Azure / DigitalOcean / Vercel / Supabase / Firebase / Cloudflare |
-| **DevOps** | Docker, Kubernetes, Terraform, Nginx, CI/CD pipelines |
-| **Testing** | Jest, Vitest, Playwright, Cypress, supertest |
-
--->
+| 🤖 **AI &amp; LLMs** | Claude Code, ChatGPT, GitHub Copilot, OpenAI API, Anthropic API, Google Gemini, Vercel AI SDK, Model Context Protocol (MCP), LangChain |
+| ⚛️ **Frontend** | React, Next.js, TypeScript, Tailwind CSS, shadcn/ui, React Query, TanStack Table, Angular, Angular Material, HTML5, CSS3 |
+| ⚙️ **Backend** | Node.js, NestJS, Express.js, PHP, Laravel, Lumen, CodeIgniter, REST APIs, GraphQL, WebSockets |
+| 🗄️ **Databases** | PostgreSQL, Supabase, MySQL, MongoDB, SQLite |
+| 🧩 **ORM &amp; Data** | Prisma ORM, Drizzle ORM, Supabase Client, TypeORM |
+| ☁️ **Cloud &amp; BaaS** | Vercel, Supabase, Firebase, Cloudflare, AWS, DigitalOcean |
+| 🚀 **DevOps &amp; CI/CD** | Docker, GitHub Actions, GitLab CI/CD, Vercel Deployments, Cloudflare Pages, Linux |
+| 🔌 **APIs &amp; Integrations** | Stripe, Razorpay, Firebase Services, Authentication, OAuth, Payment Gateways, Third-party APIs |
+| 🛠️ **Developer Tools** | Git, GitHub, GitLab, pnpm, Turborepo, Nx, ESLint, Prettier, Postman, VS Code |
+| 🧪 **Testing &amp; Quality** | Vitest, Jest, Playwright, Cypress, Testing Library |
+| 📊 **Monitoring &amp; Analytics** | PostHog, Google Analytics, Google Tag Manager, Sentry |
+| 🎨 **UI &amp; Design Systems** | Tailwind CSS, shadcn/ui, Radix UI, Material UI, Framer Motion |
 
 ## AI-Native Development Workflow
 
