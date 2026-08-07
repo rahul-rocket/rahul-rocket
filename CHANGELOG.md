@@ -11,6 +11,23 @@ follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   articles written to be published as public Gists. `gists/README.md` documents
   the ten-section structure each one follows and the planned categories; the
   first entry is an MCP server starter in TypeScript.
+- **A `Publish Gists` workflow**, `.github/workflows/publish-gists.yml`, and its
+  script `.github/scripts/publish_gists.py`. It publishes every Markdown file
+  under `gists/` to gist.github.com as a public gist and commits the resulting
+  path → gist ID map to `gists/published.json`, so later runs update those
+  gists in place instead of creating duplicates.
+
+  It requires a `GIST_TOKEN` secret — a classic PAT with only the `gist` scope.
+  The built-in `GITHUB_TOKEN` cannot create gists, because gists are
+  account-level and that token is repository-scoped; fine-grained tokens cannot
+  either. The job fails immediately with that explanation rather than
+  half-publishing.
+
+  Manual-only, with no schedule, and defaulting to a dry run: publishing to a
+  public URL under a personal account is not a thing to leave on a nightly
+  timer. Standard library only, and no third-party action — the same
+  supply-chain reasoning that applied to the removed `update_gists.py`, and
+  more pressing here because the token can write to the account's gists.
 
 ### Removed
 

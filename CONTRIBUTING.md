@@ -42,19 +42,26 @@ need both.
 
 ### Check the workflows
 
-All four workflows can be run by hand from the Actions tab — each declares
+All five workflows can be run by hand from the Actions tab — each declares
 `workflow_dispatch`. `metrics.yml` will skip every step and pass as a no-op
 unless a `METRICS_TOKEN` secret exists; that is expected, not a failure.
+`publish-gists.yml` is manual-only and has no schedule at all.
 
-Two things to know before changing them:
+Three things to know before changing them:
 
 - **Every `uses:` is pinned to a release tag.** Never `@master` or `@latest` —
   an unpinned reference lets an unreviewed upstream change run against this
   repository's write token. Bump a pin deliberately, in its own commit.
-- **`activity.yml` and `metrics.yml` push to `main`, which is protected.** Their
-  pushes only land if `github-actions[bot]` is allowed to bypass the branch
-  rule; see the comment at the top of `activity.yml`. `snake.yml` is unaffected
-  — it publishes to the unprotected `output` branch.
+- **`activity.yml`, `metrics.yml` and `publish-gists.yml` push to `main`, which
+  is protected.** Their pushes only land if `github-actions[bot]` is allowed to
+  bypass the branch rule; see the comment at the top of `activity.yml`.
+  `snake.yml` is unaffected — it publishes to the unprotected `output` branch.
+- **`publish-gists.yml` needs a `GIST_TOKEN` secret and writes outside this
+  repository.** It publishes `gists/**.md` to gist.github.com under your
+  account, which the built-in `GITHUB_TOKEN` cannot do — gists are
+  account-level, and that token is repository-scoped. It is manual-only and
+  defaults to a dry run for that reason. See
+  [`gists/README.md`](gists/README.md) for the setup steps.
 
 The `activity` section is machine-written between HTML markers. Do not
 hand-edit inside it — the next run overwrites whatever is there, and removing a
