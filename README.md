@@ -1,21 +1,14 @@
 <div align="center">
 
-# Rahul Rathore
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/banner/profile-banner-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/banner/profile-banner-light.svg">
-  <img alt="Rahul Rathore — Senior Full Stack Engineer building AI applications, React & Next.js SaaS, and developer tools with TypeScript, React, Next.js, Node.js and NestJS" src="assets/banner/profile-banner-light.svg" width="100%">
+  <img alt="Rahul Rathore — AI Engineer, React &amp; Next.js Architect, SaaS Builder, Open Source Developer. Building AI applications, developer tools and modern SaaS with TypeScript, React, Next.js, Node.js and NestJS." src="assets/banner/profile-banner-light.svg" width="100%">
 </picture>
 
-**Senior Full Stack Engineer**<br>
-Building AI applications, React &amp; Next.js SaaS, and developer tools.
+**AI Engineer** · **React &amp; Next.js Architect** · **SaaS Builder** · **Open Source Developer**
 
-`TypeScript` · `React` · `Next.js` · `Node.js` · `NestJS` · `AI`
-
-🤖 AI engineering · 🧠 LLM applications · ⚛️ React &amp; Next.js · ☁️ Cloud native · 🚀 SaaS products
-
-Core developer at [@ever-co](https://github.com/ever-co) · Ahmedabad, India
+Core developer at [@ever-co](https://github.com/ever-co) · Ahmedabad, India (IST, UTC+5:30)
 
 [Website](https://rahul-rocket.github.io) ·
 [LinkedIn](https://www.linkedin.com/in/rahul-rathore-940380108/) ·
@@ -29,158 +22,98 @@ Core developer at [@ever-co](https://github.com/ever-co) · Ahmedabad, India
 
 ## About Me
 
-I build business platforms end to end and ship them as inspectable work — a
-repository, a demo, or a stated status.
+I build products end to end — the AI layer, the front end, the API, and the
+platform underneath — and ship them as inspectable work: a repository, a demo,
+or a stated status.
 
-Most of my work sits in the TypeScript ecosystem: **React** and **Next.js** on
-the product side, **Angular** on the platforms I maintain, and **NestJS** and
+Most of my work sits in the TypeScript ecosystem. **React** and **Next.js** on
+the product side, **Angular** on the platforms I maintain, **NestJS** and
 **Node.js** behind them. I spend my time on systems that have to hold up under
-real use — ERP, CRM and HRM — and on the tools that make building them faster.
+real use — ERP, CRM and HRM — and on the AI tooling that makes building them
+faster.
 
-- **AI applications** — LLM-backed product work; the focus I am building
-  toward, and the one with the least public surface today.
-- **React &amp; Next.js** — product front ends and statically exported sites,
-  built with a typed content model and real performance budgets.
-- **SaaS &amp; business platforms** — core development on ERP/CRM/HRM products
-  at [Ever Co.](https://github.com/ever-co)
-- **Developer tools** — reusable NestJS modules, such as a dual
-  TypeORM/MikroORM integration.
+## Currently Building
+
+| | |
+| --- | --- |
+| 🤖 **AI applications** | LLM-backed product work — the direction the rest of this list serves |
+| 🔌 **MCP servers** | Model Context Protocol tooling for AI development workflows |
+| ⚛️ **React 19 &amp; Next.js** | Product front ends and statically exported sites, on a real performance budget |
+| 🛠️ **AI developer tools** | The tooling layer around building with models, not just calling them |
+| 🚀 **Full stack SaaS** | Multi-tenant products, from schema to shipped UI |
+| 🏢 **Ever Gauzy** | Core development on an open-source ERP/CRM/HRM platform |
 
 <!--
-  TODO (Rahul): the hero now leads with AI, and this list is the evidence
-  behind that positioning. The AI bullet above is deliberately honest about
-  having no public proof yet, because nothing under github.com/rahul-rocket
-  demonstrates it — gpt-chatbot is an empty README. It is the single weakest
-  point on the profile: a recruiter who reads "AI applications" and then finds
+  TODO (Rahul): this list is positioning, and the Featured Projects section
+  below is the evidence for it. The AI and MCP rows are the two with the least
+  public surface today — nothing under github.com/rahul-rocket demonstrates
+  either one (gpt-chatbot is an empty README). That gap is the single weakest
+  point on this profile: a recruiter who reads "AI applications" and then finds
   no AI repository trusts the rest of the page less.
 
-  The fix is one public artifact, not better wording. Rewrite the bullet the
-  moment you have one:
-
-  - **AI applications** — <what you built>, using <models/tooling>. <link>
-
-  Cloud architecture was also in the previous hero. It is dropped rather than
-  restated, since the same evidence problem applies; add it back with a bullet
-  that names the platform and what you run on it.
+  The fix is one public artifact, not better wording. A small MCP server with a
+  real README would close both rows at once.
 -->
-
-<!--
-  ═══════════════════════════════════════════════════════════════════════════
-  HIDDEN AT RAHUL'S REQUEST — to be corrected, then republished.
-
-  Nothing between the markers renders on the live profile. To bring the
-  section back, delete this opening comment line and the closing one below,
-  then edit the content in place.
-  ═══════════════════════════════════════════════════════════════════════════
-
-## Current Focus
-
-- Building
-  **[rahul-rocket.github.io](https://github.com/rahul-rocket/rahul-rocket.github.io)**
-  — a statically exported Next.js personal site with its own design system,
-  test suite, and accessibility budgets.
-- Core development on **[Ever Gauzy](https://github.com/ever-co/ever-gauzy)**,
-  an open-source ERP/CRM/HRM platform.
-- Moving product work toward **LLM-backed applications** — the positioning in
-  the hero, still ahead of its public record.
-
-  END of the hidden Current Focus section.
--->
-
-<!--
-  ═══════════════════════════════════════════════════════════════════════════
-  HIDDEN AT RAHUL'S REQUEST — to be corrected, then republished.
-
-  Everything from here to the end marker is one HTML comment, so none of it
-  renders. That includes the two verified cards near the bottom
-  (rahul-rocket.github.io and nestjs-multi-orm), which were accurate and are
-  hidden only because they live inside this section.
-
-  To republish: delete this opening comment line and the closing one at the
-  very end of the section. Do NOT put another HTML comment inside this block —
-  comments do not nest, so the first inner closing delimiter would end the
-  block early and leak the rest of the section onto the live profile.
-  ═══════════════════════════════════════════════════════════════════════════
 
 ## Featured Projects
 
-  ─────────────────────────────────────────────────────────────────────────────
-  TODO (Rahul) — the four product cards below are scaffolds, not descriptions.
+<!--
+  TODO (Rahul): every product card below carries the one-line description you
+  gave, and nothing beyond it. Stack and status are marked as private rather
+  than guessed, because none of these four repositories is public — they do not
+  appear under github.com/rahul-rocket. Fill each card in as it becomes public:
 
-  None of CreatorOS, Planix, PDFily or KidzoRides is public: they do not appear
-  under github.com/rahul-rocket, nor anywhere in the rahul-rocket.github.io
-  repository. Rather than invent a positioning for a product I cannot read, each
-  card carries the finished layout with four blanks to fill:
+    - **Stack** · the technologies actually used
+    - **Status** · In production / Private beta / In development / Paused
+    - **Links** · repository and/or live URL
 
-    1. the sentence under the heading — what it does, for whom
-    2. **Stack**  — the technologies actually used
-    3. **Status** — e.g. In production / Private beta / In development / Paused
-    4. **Links**  — replace the placeholder with a repository and/or live URL,
-                    or delete the line if the product has no public surface
+  A screenshot sells a product far better than a line of text. Drop a capture
+  into assets/images/ and add it under the heading:
 
-  A screenshot sells a product far better than a link does. Once a card is
-  filled in, drop a capture into assets/images/ and add it under the heading:
+    <img alt="CreatorOS — what the screenshot shows" src="assets/images/creatoros.png" width="100%">
+-->
 
-    <img alt="CreatorOS — <what the screenshot shows>" src="assets/images/creatoros.png" width="100%">
+### CreatorOS · AI Software Engineering Platform
 
-  Delete a whole card if a product should not be listed publicly yet.
+An AI platform for software engineering work.
 
-  The block stays commented out so the live profile never shows half-empty
-  cards. Fill a card in, then move it above this comment to publish it — these
-  products should lead this section, ahead of the two repositories below, and
-  CreatorOS and PDFily are the two that carry the AI positioning.
-  ─────────────────────────────────────────────────────────────────────────────
-
-### CreatorOS
-
-TODO (Rahul): one or two sentences — what CreatorOS does and who it is for.
-
-- **Stack** · TODO
-- **Status** · TODO
-- **Links** · TODO — repository and/or live demo
+- **Stack** · Private — not yet documented publicly
+- **Status** · In development, private repository
 
 ---
 
-### Planix
+### Planix · Modern Project Management SaaS
 
-TODO (Rahul): one or two sentences — what Planix does and who it is for.
+Project management SaaS built for modern product teams.
 
-- **Stack** · TODO
-- **Status** · TODO
-- **Links** · TODO — repository and/or live demo
-
----
-
-### PDFily
-
-TODO (Rahul): one or two sentences — what PDFily does and who it is for.
-
-- **Stack** · TODO
-- **Status** · TODO
-- **Links** · TODO — repository and/or live demo
+- **Stack** · Private — not yet documented publicly
+- **Status** · In development, private repository
 
 ---
 
-### KidzoRides
+### PDFily · AI PDF Editor
 
-TODO (Rahul): one or two sentences — what KidzoRides does and who it is for.
+An AI-assisted PDF editor.
 
-- **Stack** · TODO
-- **Status** · TODO
-- **Links** · TODO — repository and/or live demo
+- **Stack** · Private — not yet documented publicly
+- **Status** · In development, private repository
 
-  ─────────────────────────────────────────────────────────────────────────────
-  The two cards below are verified and accurate. They are the quickest thing
-  to republish if you want a project showcase back on the profile before the
-  four products above are ready.
-  ─────────────────────────────────────────────────────────────────────────────
+---
 
-### [rahul-rocket.github.io](https://github.com/rahul-rocket/rahul-rocket.github.io)
+### KidzoRides · Booking Platform
 
-Personal website and professional record — a statically exported Next.js site
-built as a product: typed content model, design system, per-route byte budgets,
-unit and end-to-end tests, and axe accessibility checks on every route in both
-themes.
+A booking platform for kids' rides and activities.
+
+- **Stack** · Private — not yet documented publicly
+- **Status** · In development, private repository
+
+---
+
+### [rahul-rocket.github.io](https://github.com/rahul-rocket/rahul-rocket.github.io) · Personal Site
+
+Statically exported Next.js site built as a product: typed content model, its
+own design system, per-route byte budgets, unit and end-to-end tests, and axe
+accessibility checks on every route in both themes.
 
 - **Stack** · TypeScript, Next.js
 - **Status** · Active — built, gated on content review before it is indexed
@@ -190,26 +123,38 @@ themes.
 
 ---
 
-### [nestjs-multi-orm](https://github.com/rahul-rocket/nestjs-multi-orm)
+### [nestjs-multi-orm](https://github.com/rahul-rocket/nestjs-multi-orm) · Developer Tool
 
-A NestJS module that integrates **TypeORM and MikroORM** in the same project —
-configurable per ORM, with repository-pattern abstractions and custom decorators
-for injecting repositories.
+A NestJS module that runs **TypeORM and MikroORM in the same project** —
+configurable per ORM, with repository-pattern abstractions and custom
+decorators for injecting repositories.
 
 - **Stack** · TypeScript, NestJS, TypeORM, MikroORM
 - **Status** · Paused — last updated April 2024
 - **Links** · [Repository](https://github.com/rahul-rocket/nestjs-multi-orm)
 
-  TODO (Rahul): https://github.com/rahul-rocket/gpt-chatbot has no description
-  and its README is a single heading, so there is nothing factual to write a
-  card from. It is also the only repository whose name suggests AI work, which
-  makes it the cheapest way to close the gap flagged in About Me — give it a
-  README and a description, then add a card here.
+## Open Source
 
-  END of the hidden Featured Projects section.
+| Project | Role |
+| --- | --- |
+| [Ever Gauzy](https://github.com/ever-co/ever-gauzy) — open-source ERP/CRM/HRM platform | Core developer |
+| [Ever Gauzy Teams](https://github.com/ever-co/ever-gauzy-teams) — work &amp; project management platform | Backend API developer |
+| [ngx-daterangepicker-material](https://github.com/fetrarij/ngx-daterangepicker-material) | UI fix (empty ranges) |
+| [nestjs-multi-orm](https://github.com/rahul-rocket/nestjs-multi-orm) — dual-ORM NestJS module | Author |
+
+### Recent Activity
+
+<!--
+  Written by .github/workflows/activity.yml. Do not edit between the markers —
+  the next run overwrites everything there, including the placeholder below.
+  The placeholder exists so this section never renders as a bare heading with
+  nothing under it while waiting for the workflow's first run.
 -->
+<!--START_SECTION:activity-->
+1. Waiting on the first run of the [Recent Activity workflow](.github/workflows/activity.yml) — it publishes the five most recent public events here, daily.
+<!--END_SECTION:activity-->
 
-## Tech Stack
+## Technical Expertise
 
 Grouped by role rather than listed as badges, so the table stays readable on a
 phone and honest about what is actually in daily use.
@@ -220,25 +165,24 @@ phone and honest about what is actually in daily use.
 | **Frontend** | React, Next.js, Angular, Angular Material, HTML, CSS, Bootstrap |
 | **Backend** | NestJS, Node.js, Express, RxJS, Laravel, Lumen, CodeIgniter |
 | **Databases** | PostgreSQL, MySQL, MongoDB, SQLite |
-| **APIs** | REST, GraphQL, third-party & payment gateway integrations |
+| **APIs** | REST, GraphQL, third-party &amp; payment gateway integrations |
 | **Tools** | Git, GitHub, GitLab, GitHub Actions |
 
 <!--
-  TODO (Rahul): the AI, Cloud, DevOps and Testing rows are drafted below with
-  candidate technologies. They are commented out so the table never renders a
-  row you cannot back up — and the AI row matters most, because the hero now
-  leads with AI while this table does not mention it. Trim each list to what
-  you actually use, then paste the rows into the table above and delete this
-  comment. The AI row belongs first, directly under the header.
+  TODO (Rahul): the AI row matters most — the banner and Currently Building
+  both lead with AI while this table does not mention it at all, which is the
+  first thing a technical reader will notice. Trim the drafts below to what you
+  genuinely use, then paste them in. The AI row belongs directly under the
+  header, above Languages.
 
-| **AI** | OpenAI / Anthropic APIs, LangChain, Vercel AI SDK, MCP, embeddings, vector databases |
+| **AI** | OpenAI / Anthropic APIs, MCP, Vercel AI SDK, LangChain, embeddings, vector databases |
 | **Cloud** | AWS / GCP / Azure / DigitalOcean / Vercel / Supabase / Firebase / Cloudflare |
 | **DevOps** | Docker, Kubernetes, Terraform, Nginx, CI/CD pipelines |
 | **Testing** | Jest, Vitest, Playwright, Cypress, supertest |
 
 -->
 
-## GitHub Metrics
+## GitHub Activity
 
 <div align="center">
 
@@ -310,25 +254,19 @@ phone and honest about what is actually in daily use.
 
 </div>
 
-## Open Source Contributions
-
-| Project | Role |
-| --- | --- |
-| [Ever Gauzy](https://github.com/ever-co/ever-gauzy) — open-source ERP/CRM/HRM platform | Core developer |
-| [Ever Gauzy Teams](https://github.com/ever-co/ever-gauzy-teams) — work & project management platform | Backend API developer |
-| [ngx-daterangepicker-material](https://github.com/fetrarij/ngx-daterangepicker-material) | UI fix (empty ranges) |
-
-### Recent Activity
-
 <!--
-  Written by .github/workflows/activity.yml. Do not edit between the markers —
-  the next run overwrites everything there, including the placeholder below.
-  The placeholder exists so this section never renders as a bare heading with
-  nothing under it while waiting for the workflow's first run.
+  TODO (Rahul): you asked for an Achievements block — "5+ Production SaaS",
+  "1000+ Commits", "TypeScript Expert" and so on. It is left out rather than
+  written, for one reason: the profile-details card directly above already
+  prints your real commit, PR and contribution totals, so a hand-written
+  number sitting next to a live one is only ever a liability. If the two
+  disagree, the reader believes the card and discounts the rest of the page.
+
+  Claims like these earn their place once each one points at something a
+  reader can open. "5+ production SaaS" becomes credible the moment the
+  Featured Projects cards above carry live URLs; until then it is the same
+  assertion, only louder.
 -->
-<!--START_SECTION:activity-->
-1. Waiting on the first run of the [Recent Activity workflow](.github/workflows/activity.yml) — it publishes the five most recent public events here, daily.
-<!--END_SECTION:activity-->
 
 ## Latest Gists
 
@@ -343,12 +281,27 @@ phone and honest about what is actually in daily use.
 1. Waiting on the first run of the [Latest Gists workflow](.github/workflows/gists.yml) — it publishes the five most recently updated public gists here, daily.
 <!--END_SECTION:gists-->
 
----
+## How I Build
 
-## 📫 Get in Touch
+I build AI-powered products, developer tools, and SaaS applications with React,
+Next.js, Node.js and TypeScript. Clean architecture and developer experience
+matter as much as shipping features — a codebase that is pleasant to work in is
+the reason the second year of a product goes faster than the first, not slower.
 
-The hero above carries the same links as a compact row; this section says what
-each one is actually for, so the two are not simply a repeat of one another.
+Three things I hold to:
+
+- **Ship inspectable work.** A repository, a demo, or an honest status. Claims
+  without an artifact behind them are just claims.
+- **Type the boundaries.** Most production bugs are contract bugs. TypeScript
+  at every seam is the cheapest defence there is.
+- **Budget for the reader.** Performance budgets, tests and accessibility
+  checks are not polish added at the end; they are what stops a product
+  degrading with every release.
+
+## Get in Touch
+
+The header carries the same links as a compact row; this table says what each
+one is actually for, so the two are not simply a repeat of one another.
 
 | Channel | Best for |
 | --- | --- |
@@ -376,7 +329,11 @@ each one is actually for, so the two are not simply a repeat of one another.
 
 <div align="center">
 
-My repositories are open — read the code first, then get in touch if it raises
-a question worth answering.
+### Building something with AI, React, Next.js or SaaS?
+
+I take on product work where the architecture matters as much as the feature
+list. My repositories are open — read the code first, then
+[get in touch](mailto:rahulrathore576@gmail.com) if it raises a question worth
+answering.
 
 </div>

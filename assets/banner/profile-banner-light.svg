@@ -1,20 +1,91 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" width="1200" height="260" role="img" aria-labelledby="bannerTitle bannerDesc">
-  <title id="bannerTitle">Rahul Rathore — Senior Full Stack Engineer</title>
-  <desc id="bannerDesc">Banner reading: Rahul Rathore, Senior Full Stack Engineer, building AI applications, React and Next.js SaaS, and developer tools, with TypeScript, React, Next.js, Node.js and NestJS.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-labelledby="bannerTitle bannerDesc">
+  <title id="bannerTitle">Rahul Rathore — AI Engineer, React &amp; Next.js Architect</title>
+  <desc id="bannerDesc">Banner reading: Rahul Rathore. AI Engineer, React and Next.js Architect, SaaS Builder, Open Source Developer. Building AI applications, developer tools and modern SaaS with TypeScript, React, Next.js, Node.js and NestJS.</desc>
 
-  <rect width="1200" height="260" fill="#ffffff"/>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f6f9fc"/>
+      <stop offset="55%" stop-color="#eef4fb"/>
+      <stop offset="100%" stop-color="#f4f0fd"/>
+    </linearGradient>
 
-  <g stroke="#eaeef2" stroke-width="1">
-    <path d="M0 65h1200M0 130h1200M0 195h1200"/>
-    <path d="M300 0v260M600 0v260M900 0v260"/>
+    <radialGradient id="glowA" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowC" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="glass" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.45"/>
+    </linearGradient>
+    <linearGradient id="glassEdge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.30"/>
+      <stop offset="60%" stop-color="#1f2328" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.28"/>
+    </linearGradient>
+
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="50%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+
+    <linearGradient id="nameFill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e40af"/>
+    </linearGradient>
+
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#0f172a" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="320" fill="url(#bg)"/>
+  <rect width="1200" height="320" fill="url(#grid)"/>
+
+  <ellipse cx="140" cy="40" rx="360" ry="230" fill="url(#glowA)"/>
+  <ellipse cx="1080" cy="300" rx="380" ry="240" fill="url(#glowB)"/>
+  <ellipse cx="900" cy="60" rx="260" ry="180" fill="url(#glowC)"/>
+
+  <!-- Neural network motif: the AI reference, kept as geometry rather than an icon. -->
+  <g opacity="0.65">
+    <g stroke="#0284c7" stroke-opacity="0.30" stroke-width="1" fill="none">
+      <path d="M905 90 L1000 60 M905 90 L1000 130 M905 160 L1000 130 M905 160 L1000 200 M905 230 L1000 200 M905 230 L1000 260"/>
+      <path d="M1000 60 L1095 110 M1000 130 L1095 110 M1000 130 L1095 180 M1000 200 L1095 180 M1000 200 L1095 240 M1000 260 L1095 240"/>
+      <path d="M810 125 L905 90 M810 125 L905 160 M810 195 L905 160 M810 195 L905 230"/>
+    </g>
+    <g fill="#ffffff" stroke="#0284c7" stroke-opacity="0.85" stroke-width="1.5">
+      <circle cx="810" cy="125" r="5"/><circle cx="810" cy="195" r="5"/>
+      <circle cx="905" cy="90" r="5"/><circle cx="905" cy="160" r="5"/><circle cx="905" cy="230" r="5"/>
+      <circle cx="1000" cy="60" r="5"/><circle cx="1000" cy="130" r="5"/>
+      <circle cx="1000" cy="200" r="5"/><circle cx="1000" cy="260" r="5"/>
+    </g>
+    <g fill="#8b5cf6" fill-opacity="0.9">
+      <circle cx="1095" cy="110" r="5"/><circle cx="1095" cy="180" r="5"/><circle cx="1095" cy="240" r="5"/>
+    </g>
   </g>
 
-  <rect x="72" y="62" width="3" height="140" fill="#0969da"/>
+  <!-- Glass panel -->
+  <g>
+    <rect x="56" y="46" width="700" height="228" rx="22" fill="url(#glass)"/>
+    <rect x="56.5" y="46.5" width="699" height="227" rx="21.5" fill="none" stroke="url(#glassEdge)" stroke-width="1"/>
+  </g>
+
+  <rect x="88" y="82" width="4" height="156" rx="2" fill="url(#rule)"/>
 
   <g font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
-    <text x="108" y="102" fill="#1f2328" font-size="40" font-weight="700" letter-spacing="-0.6">Rahul Rathore</text>
-    <text x="108" y="140" fill="#1f2328" font-size="24" font-weight="600" letter-spacing="-0.2">Senior Full Stack Engineer</text>
-    <text x="108" y="170" fill="#59636e" font-size="19" font-weight="400">AI Applications &#183; React &amp; Next.js SaaS &#183; Developer Tools</text>
-    <text x="108" y="200" fill="#59636e" font-size="15" font-weight="500" letter-spacing="1.6">TYPESCRIPT &#183; REACT &#183; NEXT.JS &#183; NODE.JS &#183; NESTJS &#183; AI</text>
+    <text x="120" y="120" fill="url(#nameFill)" font-size="46" font-weight="700" letter-spacing="-1">Rahul Rathore</text>
+    <text x="120" y="158" fill="#0369a1" font-size="20" font-weight="600" letter-spacing="0.2">AI Engineer &#183; React &amp; Next.js Architect &#183; SaaS Builder</text>
+    <text x="120" y="196" fill="#334155" font-size="19" font-weight="400">Building AI applications, developer tools</text>
+    <text x="120" y="222" fill="#334155" font-size="19" font-weight="400">and modern SaaS.</text>
+    <text x="120" y="254" fill="#64748b" font-size="13" font-weight="600" letter-spacing="1.8">TYPESCRIPT &#183; REACT &#183; NEXT.JS &#183; NODE.JS &#183; NESTJS</text>
   </g>
 </svg>
