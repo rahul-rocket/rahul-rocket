@@ -16,6 +16,8 @@ Core developer at [@ever-co](https://github.com/ever-co) · Ahmedabad, India (IS
 [X](https://x.com/rahulrathore576) ·
 [Upwork](https://www.upwork.com/freelancers/~01192228420671270c)
 
+<img alt="Visitors" src="https://visitor-badge.laobi.icu/badge?page_id=rahul-rocket">
+
 </div>
 
 ---
